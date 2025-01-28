@@ -1,43 +1,43 @@
-        <?xml version="1.0" encoding="UTF-8"?>
-        <rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-            <channel>
-                <title>YappoLogs2</title>
-                <link>https://blog.yappo.jp/</link>
-                <atom:link href="https://blog.yappo.jp/feed.xml" rel="self" type="application/rss+xml"/>
-                <description>The latest articles from my blog</description>
-                <language>en</language>
-                <pubDate>Mon, 27 Jan 2025 10:10:00 GMT</pubDate>
-                        <item>
-            <title>index.html と rss feed も生成できるようにした</title>
-            <link>https://blog.yappo.jp/entry//entry/2025/01/27/support-index/</link>
-            <description/>
-            <content:encoded>
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+    <title>YappoLogs2</title>
+    <link>https://blog.yappo.jp/</link>
+    <atom:link href="https://blog.yappo.jp/feed.xml" rel="self" type="application/rss+xml"/>
+    <description>The latest articles from my blog</description>
+    <language>en</language>
+    <pubDate>Mon, 27 Jan 2025 10:10:00 GMT</pubDate>
+    <item>
+        <title>index.html と rss feed も生成できるようにした</title>
+        <link>https://blog.yappo.jp/entry//entry/2025/01/27/support-index/</link>
+        <description/>
+        <content:encoded>
 一旦エントリーページを生成してトップページとフィード購読もできるようになった風味。ちょっとコード雑すぎるから綺麗にせんとや。。。...
-            </content:encoded>
-            <pubDate>Mon, 27 Jan 2025 10:10:00 GMT</pubDate>
-            <guid>https://blog.yappo.jp/entry//entry/2025/01/27/support-index/</guid>
-        </item>
-        <item>
-            <title>とりあえずmd2blogかいた</title>
-            <link>https://blog.yappo.jp/entry//entry/2025/01/27/pologenize/</link>
-            <description/>
-            <content:encoded>
+        </content:encoded>
+        <pubDate>Mon, 27 Jan 2025 10:10:00 GMT</pubDate>
+        <guid>https://blog.yappo.jp/entry//entry/2025/01/27/support-index/</guid>
+    </item>
+    <item>
+        <title>とりあえずmd2blogかいた</title>
+        <link>https://blog.yappo.jp/entry//entry/2025/01/27/pologenize/</link>
+        <description/>
+        <content:encoded>
 IntelliJ AI Assistant さんに手伝ってもらって取り敢えずは markdown から HTML 作ってくれる君を作ったので安心。。テンプレートエンジン使いたいけど取り敢えず kotlinx で HTML 書いてます。 Markdown parser は変なのおす...
-            </content:encoded>
-            <pubDate>Sun, 26 Jan 2025 22:00:00 GMT</pubDate>
-            <guid>https://blog.yappo.jp/entry//entry/2025/01/27/pologenize/</guid>
-        </item>
-        <item>
-            <title>そろそろ再開します〜</title>
-            <link>https://blog.yappo.jp/entry//entry/2025/01/26/reborn/</link>
-            <description/>
-            <content:encoded>
+        </content:encoded>
+        <pubDate>Sun, 26 Jan 2025 22:00:00 GMT</pubDate>
+        <guid>https://blog.yappo.jp/entry//entry/2025/01/27/pologenize/</guid>
+    </item>
+    <item>
+        <title>そろそろ再開します〜</title>
+        <link>https://blog.yappo.jp/entry//entry/2025/01/26/reborn/</link>
+        <description/>
+        <content:encoded>
 前のサーバがめっちゃクラッシュしてずっと放置しすぎてたけど、そろぼち再開しようということでここに再開します。
 note とか色々あるんだけど、やっぱエンジニアなら自前で CMS 作るよねー普通は。ということで作るところから始めよう。。。
 まだコード書いてすらいないので stati...
-            </content:encoded>
-            <pubDate>Sun, 26 Jan 2025 14:00:00 GMT</pubDate>
-            <guid>https://blog.yappo.jp/entry//entry/2025/01/26/reborn/</guid>
-        </item>
-            </channel>
-        </rss>
+        </content:encoded>
+        <pubDate>Sun, 26 Jan 2025 14:00:00 GMT</pubDate>
+        <guid>https://blog.yappo.jp/entry//entry/2025/01/26/reborn/</guid>
+    </item>
+    </channel>
+</rss>
