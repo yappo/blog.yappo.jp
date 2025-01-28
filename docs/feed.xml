@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 <rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
@@ -12,7 +13,7 @@
         <link>https://blog.yappo.jp/entry//entry/2025/01/27/support-index/</link>
         <description/>
         <content:encoded>
-一旦エントリーページを生成してトップページとフィード購読もできるようになった風味。ちょっとコード雑すぎるから綺麗にせんとや。。。...
+一旦エントリーページを生成してトップページとフィード購読もできるようになった風味。ちょっとコード雑すぎるから綺麗にせんとや。。。
         </content:encoded>
         <pubDate>Mon, 27 Jan 2025 10:10:00 GMT</pubDate>
         <guid>https://blog.yappo.jp/entry//entry/2025/01/27/support-index/</guid>
