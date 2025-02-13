@@ -6,7 +6,17 @@
     <atom:link href="https://blog.yappo.jp/feed.xml" rel="self" type="application/rss+xml"/>
     <description>The latest articles from my blog</description>
     <language>en</language>
-    <pubDate>Tue, 28 Jan 2025 20:42:52 GMT</pubDate>
+    <pubDate>Thu, 13 Feb 2025 21:37:25 GMT</pubDate>
+    <item>
+        <title>KWebScraper - なんとなく Kotlin で Web::Scraper 実装してみた</title>
+        <link>https://blog.yappo.jp/entry//entry/2025/02/14/kwebscraper/</link>
+        <description/>
+        <content:encoded>
+ふと Kotlin で DSL を実装してみたくなって、なんか題材ないかなと思ったら Web::Scraper が丁度良さそうな粒度だったので作ってみた。Perl だと同じ関数名でスコープごとに役割を変えていくって奴は local を使ってレキシカルスコープに絞ってコードリファレ...
+        </content:encoded>
+        <pubDate>Thu, 13 Feb 2025 21:37:25 GMT</pubDate>
+        <guid>https://blog.yappo.jp/entry//entry/2025/02/14/kwebscraper/</guid>
+    </item>
     <item>
         <title>meta.toml を実装</title>
         <link>https://blog.yappo.jp/entry//entry/2025/01/29/metafile/</link>
