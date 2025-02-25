@@ -9,48 +9,48 @@
     <pubDate>Thu, 13 Feb 2025 21:37:25 GMT</pubDate>
     <item>
         <title>KWebScraper - なんとなく Kotlin で Web::Scraper 実装してみた</title>
-        <link>https://blog.yappo.jp/entry/entry/2025/02/14/kwebscraper/</link>
+        <link>https://blog.yappo.jp/entry/2025/02/14/kwebscraper/</link>
         <description/>
         <content:encoded>
 ふと Kotlin で DSL を実装してみたくなって、なんか題材ないかなと思ったら Web::Scraper が丁度良さそうな粒度だったので作ってみた。Perl だと同じ関数名でスコープごとに役割を変えていくって奴は local を使ってレキシカルスコープに絞ってコードリファレ...
         </content:encoded>
         <pubDate>Thu, 13 Feb 2025 21:37:25 GMT</pubDate>
-        <guid>https://blog.yappo.jp/entry/entry/2025/02/14/kwebscraper/</guid>
+        <guid>https://blog.yappo.jp/entry/2025/02/14/kwebscraper/</guid>
     </item>
     <item>
         <title>meta.toml を実装</title>
-        <link>https://blog.yappo.jp/entry/entry/2025/01/29/metafile/</link>
+        <link>https://blog.yappo.jp/entry/2025/01/29/metafile/</link>
         <description/>
         <content:encoded>
 index.md ファイルに更新日時とかを書くダルダル運用だったけど、新しく index.md を追加したことを検知して publish date を自動で付与するようにした。
 ついでに update date も検知して更新できるようにしといた。これで更新あれば HTML 生成...
         </content:encoded>
         <pubDate>Tue, 28 Jan 2025 20:42:52 GMT</pubDate>
-        <guid>https://blog.yappo.jp/entry/entry/2025/01/29/metafile/</guid>
+        <guid>https://blog.yappo.jp/entry/2025/01/29/metafile/</guid>
     </item>
     <item>
         <title>index.html と rss feed も生成できるようにした</title>
-        <link>https://blog.yappo.jp/entry/entry/2025/01/27/support-index/</link>
+        <link>https://blog.yappo.jp/entry/2025/01/27/support-index/</link>
         <description/>
         <content:encoded>
 一旦エントリーページを生成してトップページとフィード購読もできるようになった風味。ちょっとコード雑すぎるから綺麗にせんとや。。。
         </content:encoded>
         <pubDate>Mon, 27 Jan 2025 10:10:00 GMT</pubDate>
-        <guid>https://blog.yappo.jp/entry/entry/2025/01/27/support-index/</guid>
+        <guid>https://blog.yappo.jp/entry/2025/01/27/support-index/</guid>
     </item>
     <item>
         <title>とりあえずmd2blogかいた</title>
-        <link>https://blog.yappo.jp/entry/entry/2025/01/27/pologenize/</link>
+        <link>https://blog.yappo.jp/entry/2025/01/27/pologenize/</link>
         <description/>
         <content:encoded>
 IntelliJ AI Assistant さんに手伝ってもらって取り敢えずは markdown から HTML 作ってくれる君を作ったので安心。。テンプレートエンジン使いたいけど取り敢えず kotlinx で HTML 書いてます。 Markdown parser は変なのおす...
         </content:encoded>
         <pubDate>Sun, 26 Jan 2025 22:00:00 GMT</pubDate>
-        <guid>https://blog.yappo.jp/entry/entry/2025/01/27/pologenize/</guid>
+        <guid>https://blog.yappo.jp/entry/2025/01/27/pologenize/</guid>
     </item>
     <item>
         <title>そろそろ再開します〜</title>
-        <link>https://blog.yappo.jp/entry/entry/2025/01/26/reborn/</link>
+        <link>https://blog.yappo.jp/entry/2025/01/26/reborn/</link>
         <description/>
         <content:encoded>
 前のサーバがめっちゃクラッシュしてずっと放置しすぎてたけど、そろぼち再開しようということでここに再開します。
@@ -58,7 +58,7 @@ note とか色々あるんだけど、やっぱエンジニアなら自前で CM
 まだコード書いてすらいないので stati...
         </content:encoded>
         <pubDate>Sun, 26 Jan 2025 14:00:00 GMT</pubDate>
-        <guid>https://blog.yappo.jp/entry/entry/2025/01/26/reborn/</guid>
+        <guid>https://blog.yappo.jp/entry/2025/01/26/reborn/</guid>
     </item>
     </channel>
 </rss>
