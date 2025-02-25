@@ -1,0 +1,6 @@
+documentRootPath = "docs/entry"
+blogTopUrl = "https://blog.yappo.jp/"
+documentBaseUrl = "https://blog.yappo.jp/entry/"
+feedXmlPath = "docs/feed.xml"
+feedXmlUrl = "https://blog.yappo.jp/feed.xml"
+indexHtmlPath = "docs/index.html"

@@ -6,7 +6,19 @@
     <atom:link href="https://blog.yappo.jp/feed.xml" rel="self" type="application/rss+xml"/>
     <description>The latest articles from my blog</description>
     <language>en</language>
-    <pubDate>Thu, 13 Feb 2025 21:37:25 GMT</pubDate>
+    <pubDate>Tue, 25 Feb 2025 13:22:48 GMT</pubDate>
+    <item>
+        <title>config.toml を実装したよ</title>
+        <link>https://blog.yappo.jp/entry/2025/02/25/implemented-configuration/</link>
+        <description/>
+        <content:encoded>
+各種ファイルパスをコードに書いてたのを外に出そうと思って早一ヶ月、ようやく実装した。documentRootPath = &amp;quot;docs/entry&amp;quot;
+blogTopUrl = &amp;quot;https://blog.yappo.jp/&amp;quot;
+document...
+        </content:encoded>
+        <pubDate>Tue, 25 Feb 2025 13:22:48 GMT</pubDate>
+        <guid>https://blog.yappo.jp/entry/2025/02/25/implemented-configuration/</guid>
+    </item>
     <item>
         <title>KWebScraper - なんとなく Kotlin で Web::Scraper 実装してみた</title>
         <link>https://blog.yappo.jp/entry/2025/02/14/kwebscraper/</link>
