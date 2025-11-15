@@ -1,29 +1,46 @@
+
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <title>KWebScraper - なんとなく Kotlin で Web::Scraper 実装してみた - YappoLogs2</title>
-    <link rel="icon" href="/favicon.png">
-    <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://blog.yappo.jp/feed.xml">
-  </head>
-  <body>
-    <header>
-      <h1><a href="https://blog.yappo.jp/">YappoLogs2</a></h1>
-    </header>
-    <article class="section">
-      <div class="eyecatch"></div>
-      <div class="container">
+    <link rel="icon" href="/favicon.png"/>
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://blog.yappo.jp/feed.xml"/>
+</head>
+<body>
+<header>
+    <h1>
+        <a href="https://blog.yappo.jp/">YappoLogs2</a>
+    </h1>
+</header>
+<article class="section">
+    <div class="eyecatch">
+    </div>
+    <div class="container">
         <h1>KWebScraper - なんとなく Kotlin で Web::Scraper 実装してみた</h1>
-        <div><img src="https://pbs.twimg.com/profile_images/1770102954382831616/H3LXaTgp_normal.jpg" alt="yappo" width="16" height="16">✍ : Fri, 14 Feb 2025 06:37:25 JST</div>
-        <div><p>ふと Kotlin で DSL を実装してみたくなって、なんか題材ないかなと思ったら <a href="https://metacpan.org/pod/Web::Scraper">Web::Scraper</a> が丁度良さそうな粒度だったので作ってみた。</p><p>Perl だと同じ関数名でスコープごとに役割を変えていくって奴は <code>local</code> を使ってレキシカルスコープに絞ってコードリファレンスを場面場面で変えていくって感じでやっていくんだけど。
+        <div>
+            <img src="https://pbs.twimg.com/profile_images/1770102954382831616/H3LXaTgp_normal.jpg"
+                 alt="yappo"
+                 width="16"
+                 height="16"/>
+            ✍ : Fri, 14 Feb 2025 06:37:25 JST
+        </div>
+        <div>
+            <p>ふと Kotlin で DSL を実装してみたくなって、なんか題材ないかなと思ったら <a href="https://metacpan.org/pod/Web::Scraper">Web::Scraper</a> が丁度良さそうな粒度だったので作ってみた。</p><p>Perl だと同じ関数名でスコープごとに役割を変えていくって奴は <code>local</code> を使ってレキシカルスコープに絞ってコードリファレンスを場面場面で変えていくって感じでやっていくんだけど。
 Kotlin の場合は、レシーバ付き関数リテラルを使ったら良いのかなと思って作ってみたら普通に作れた。</p><p><code>scraper</code> の中にある <code>process</code> と、 <code>process</code> の中にある <code>process</code> は別のクラスにメソッド生やしてるんだけど、なんかもっとちゃんとした書き方ありそう。
 Perl の Web::Scraper のほうは取得したデータのハッシュへの置き換えを key/value の形で指定しやすい感じで作ってるんだけど、 Builder 的に組み立てずに it に取得できた Element Object を渡しとくので、普通にコード書いて　Object を作ってくださいな。という感じで</p><p>実装は下記の様な感じです。</p><script src="https://gist.github.com/yappo/3e2d77b3ddb9146eee7e49557151fa41.js"></script>
 <p>他の DSL 実装見ずに適当に作っただけなので、あとで他の実装も見ておこう。。
-1時間で作れるかと思ってたけど眠くて3時間かかってしまった。。</p><p>てか何も考えずに gist 貼ってみたけど普通に表示できるのねw</p></div>
-      </div>
-    </article>
-    <footer>
-      <p><small><a href="https://x.com/yappo">@Yappo</a></small></p>
-    </footer>
-  </body>
+1時間で作れるかと思ってたけど眠くて3時間かかってしまった。。</p><p>てか何も考えずに gist 貼ってみたけど普通に表示できるのねw</p>
+        </div>
+    </div>
+</article>
+<footer>
+    <p>
+        <small>
+            <a href="https://x.com/yappo">@Yappo</a>
+        </small>
+    </p>
+</footer>
+</body>
 </html>
