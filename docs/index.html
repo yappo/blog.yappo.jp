@@ -25,70 +25,46 @@
         <div class="mx-auto w-full max-w-5xl px-4 py-10">
             <div class="grid gap-6">
                 
-                    <article class="rounded-2xl border border-slate-800 bg-slate-900/40 p-6 shadow-lg shadow-slate-900/40">
-                        <div class="flex flex-col gap-2">
-                            <p class="text-xs uppercase tracking-wide text-slate-400">Tue, 25 Feb 2025 22:22:48 JST</p>
-                            <a href="https://blog.yappo.jp/entry/2025/02/25/implemented-configuration/" class="text-2xl font-semibold text-white hover:text-slate-200 transition">
-                                config.toml を実装したよ
-                            </a>
-                            <p class="text-slate-300">各種ファイルパスをコードに書いてたのを外に出そうと思って早一ヶ月、ようやく実装した。documentRootPath = &amp;quot;docs/entry&amp;quot;
+                    <a href="https://blog.yappo.jp/entry/2025/02/25/implemented-configuration/" class="rounded-2xl border border-slate-800 bg-slate-900/40 p-6 shadow-lg shadow-slate-900/40 flex flex-col gap-2 hover:border-slate-600 hover:bg-slate-900 transition">
+                        <p class="text-xs uppercase tracking-wide text-slate-400">Tue, 25 Feb 2025 22:22:48 JST</p>
+                        <h2 class="text-2xl font-semibold text-white">config.toml を実装したよ</h2>
+                        <p class="text-slate-300">各種ファイルパスをコードに書いてたのを外に出そうと思って早一ヶ月、ようやく実装した。documentRootPath = &amp;quot;docs/entry&amp;quot;
 blogTopUrl = &amp;quot;https://blog.yappo.jp/&amp;quot;
 document...</p>
-                        </div>
-                    </article>
+                    </a>
                 
-                    <article class="rounded-2xl border border-slate-800 bg-slate-900/40 p-6 shadow-lg shadow-slate-900/40">
-                        <div class="flex flex-col gap-2">
-                            <p class="text-xs uppercase tracking-wide text-slate-400">Fri, 14 Feb 2025 06:37:25 JST</p>
-                            <a href="https://blog.yappo.jp/entry/2025/02/14/kwebscraper/" class="text-2xl font-semibold text-white hover:text-slate-200 transition">
-                                KWebScraper - なんとなく Kotlin で Web::Scraper 実装してみた
-                            </a>
-                            <p class="text-slate-300">ふと Kotlin で DSL を実装してみたくなって、なんか題材ないかなと思ったら Web::Scraper が丁度良さそうな粒度だったので作ってみた。Perl だと同じ関数名でスコープごとに役割を変えていくって奴は local を使ってレキシカルスコープに絞ってコードリファレ...</p>
-                        </div>
-                    </article>
+                    <a href="https://blog.yappo.jp/entry/2025/02/14/kwebscraper/" class="rounded-2xl border border-slate-800 bg-slate-900/40 p-6 shadow-lg shadow-slate-900/40 flex flex-col gap-2 hover:border-slate-600 hover:bg-slate-900 transition">
+                        <p class="text-xs uppercase tracking-wide text-slate-400">Fri, 14 Feb 2025 06:37:25 JST</p>
+                        <h2 class="text-2xl font-semibold text-white">KWebScraper - なんとなく Kotlin で Web::Scraper 実装してみた</h2>
+                        <p class="text-slate-300">ふと Kotlin で DSL を実装してみたくなって、なんか題材ないかなと思ったら Web::Scraper が丁度良さそうな粒度だったので作ってみた。Perl だと同じ関数名でスコープごとに役割を変えていくって奴は local を使ってレキシカルスコープに絞ってコードリファレ...</p>
+                    </a>
                 
-                    <article class="rounded-2xl border border-slate-800 bg-slate-900/40 p-6 shadow-lg shadow-slate-900/40">
-                        <div class="flex flex-col gap-2">
-                            <p class="text-xs uppercase tracking-wide text-slate-400">Wed, 29 Jan 2025 05:42:52 JST</p>
-                            <a href="https://blog.yappo.jp/entry/2025/01/29/metafile/" class="text-2xl font-semibold text-white hover:text-slate-200 transition">
-                                meta.toml を実装
-                            </a>
-                            <p class="text-slate-300">index.md ファイルに更新日時とかを書くダルダル運用だったけど、新しく index.md を追加したことを検知して publish date を自動で付与するようにした。
+                    <a href="https://blog.yappo.jp/entry/2025/01/29/metafile/" class="rounded-2xl border border-slate-800 bg-slate-900/40 p-6 shadow-lg shadow-slate-900/40 flex flex-col gap-2 hover:border-slate-600 hover:bg-slate-900 transition">
+                        <p class="text-xs uppercase tracking-wide text-slate-400">Wed, 29 Jan 2025 05:42:52 JST</p>
+                        <h2 class="text-2xl font-semibold text-white">meta.toml を実装</h2>
+                        <p class="text-slate-300">index.md ファイルに更新日時とかを書くダルダル運用だったけど、新しく index.md を追加したことを検知して publish date を自動で付与するようにした。
 ついでに update date も検知して更新できるようにしといた。これで更新あれば HTML 生成...</p>
-                        </div>
-                    </article>
+                    </a>
                 
-                    <article class="rounded-2xl border border-slate-800 bg-slate-900/40 p-6 shadow-lg shadow-slate-900/40">
-                        <div class="flex flex-col gap-2">
-                            <p class="text-xs uppercase tracking-wide text-slate-400">Mon, 27 Jan 2025 19:10:00 JST</p>
-                            <a href="https://blog.yappo.jp/entry/2025/01/27/support-index/" class="text-2xl font-semibold text-white hover:text-slate-200 transition">
-                                index.html と rss feed も生成できるようにした
-                            </a>
-                            <p class="text-slate-300">一旦エントリーページを生成してトップページとフィード購読もできるようになった風味。ちょっとコード雑すぎるから綺麗にせんとや。。。</p>
-                        </div>
-                    </article>
+                    <a href="https://blog.yappo.jp/entry/2025/01/27/support-index/" class="rounded-2xl border border-slate-800 bg-slate-900/40 p-6 shadow-lg shadow-slate-900/40 flex flex-col gap-2 hover:border-slate-600 hover:bg-slate-900 transition">
+                        <p class="text-xs uppercase tracking-wide text-slate-400">Mon, 27 Jan 2025 19:10:00 JST</p>
+                        <h2 class="text-2xl font-semibold text-white">index.html と rss feed も生成できるようにした</h2>
+                        <p class="text-slate-300">一旦エントリーページを生成してトップページとフィード購読もできるようになった風味。ちょっとコード雑すぎるから綺麗にせんとや。。。</p>
+                    </a>
                 
-                    <article class="rounded-2xl border border-slate-800 bg-slate-900/40 p-6 shadow-lg shadow-slate-900/40">
-                        <div class="flex flex-col gap-2">
-                            <p class="text-xs uppercase tracking-wide text-slate-400">Mon, 27 Jan 2025 07:00:00 JST</p>
-                            <a href="https://blog.yappo.jp/entry/2025/01/27/pologenize/" class="text-2xl font-semibold text-white hover:text-slate-200 transition">
-                                とりあえずmd2blogかいた
-                            </a>
-                            <p class="text-slate-300">IntelliJ AI Assistant さんに手伝ってもらって取り敢えずは markdown から HTML 作ってくれる君を作ったので安心。。テンプレートエンジン使いたいけど取り敢えず kotlinx で HTML 書いてます。 Markdown parser は変なのおす...</p>
-                        </div>
-                    </article>
+                    <a href="https://blog.yappo.jp/entry/2025/01/27/pologenize/" class="rounded-2xl border border-slate-800 bg-slate-900/40 p-6 shadow-lg shadow-slate-900/40 flex flex-col gap-2 hover:border-slate-600 hover:bg-slate-900 transition">
+                        <p class="text-xs uppercase tracking-wide text-slate-400">Mon, 27 Jan 2025 07:00:00 JST</p>
+                        <h2 class="text-2xl font-semibold text-white">とりあえずmd2blogかいた</h2>
+                        <p class="text-slate-300">IntelliJ AI Assistant さんに手伝ってもらって取り敢えずは markdown から HTML 作ってくれる君を作ったので安心。。テンプレートエンジン使いたいけど取り敢えず kotlinx で HTML 書いてます。 Markdown parser は変なのおす...</p>
+                    </a>
                 
-                    <article class="rounded-2xl border border-slate-800 bg-slate-900/40 p-6 shadow-lg shadow-slate-900/40">
-                        <div class="flex flex-col gap-2">
-                            <p class="text-xs uppercase tracking-wide text-slate-400">Sun, 26 Jan 2025 23:00:00 JST</p>
-                            <a href="https://blog.yappo.jp/entry/2025/01/26/reborn/" class="text-2xl font-semibold text-white hover:text-slate-200 transition">
-                                そろそろ再開します〜
-                            </a>
-                            <p class="text-slate-300">前のサーバがめっちゃクラッシュしてずっと放置しすぎてたけど、そろぼち再開しようということでここに再開します。
+                    <a href="https://blog.yappo.jp/entry/2025/01/26/reborn/" class="rounded-2xl border border-slate-800 bg-slate-900/40 p-6 shadow-lg shadow-slate-900/40 flex flex-col gap-2 hover:border-slate-600 hover:bg-slate-900 transition">
+                        <p class="text-xs uppercase tracking-wide text-slate-400">Sun, 26 Jan 2025 23:00:00 JST</p>
+                        <h2 class="text-2xl font-semibold text-white">そろそろ再開します〜</h2>
+                        <p class="text-slate-300">前のサーバがめっちゃクラッシュしてずっと放置しすぎてたけど、そろぼち再開しようということでここに再開します。
 note とか色々あるんだけど、やっぱエンジニアなら自前で CMS 作るよねー普通は。ということで作るところから始めよう。。。
 まだコード書いてすらいないので stati...</p>
-                        </div>
-                    </article>
+                    </a>
                 
             </div>
         </div>
