@@ -6,36 +6,46 @@
     <title>index.html と rss feed も生成できるようにした - YappoLogs2</title>
     <link rel="icon" href="/favicon.png"/>
     <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://blog.yappo.jp/feed.xml"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"/> 
+    <script src="https://cdn.tailwindcss.com"></script> 
 </head>
-<body>
-<header>
-    <h1>
-        <a href="https://blog.yappo.jp/">YappoLogs2</a>
-    </h1>
-</header>
-<article class="section">
-    <div class="eyecatch">
-    </div>
-    <div class="container">
-        <h1>index.html と rss feed も生成できるようにした</h1>
-        <div>
-            <img src="https://pbs.twimg.com/profile_images/1770102954382831616/H3LXaTgp_normal.jpg"
-                 alt="Yappo"
-                 width="16"
-                 height="16"/>
-            ✍ : Mon, 27 Jan 2025 19:10:00 JST
+<body class="bg-slate-950 text-slate-100 font-sans">
+<div class="min-h-screen flex flex-col">
+    <header class="border-b border-slate-800 bg-slate-900/50">
+        <div class="mx-auto w-full max-w-4xl px-4 py-6 flex items-center justify-between gap-4">
+            <div>
+                <a href="https://blog.yappo.jp/" class="text-xl font-semibold tracking-tight hover:text-slate-200 transition">
+                    YappoLogs2
+                </a>
+            </div>
+            <div class="text-xs text-slate-400">
+                Tailwind CSS + daisyUI ready
+            </div>
         </div>
-        <div>
-            <p>一旦エントリーページを生成してトップページとフィード購読もできるようになった風味。</p><p>ちょっとコード雑すぎるから綺麗にせんとや。。。</p>
+    </header>
+    <main class="flex-1">
+        <article class="mx-auto w-full max-w-4xl px-4 py-10 space-y-8">
+            <div class="space-y-2">
+                <p class="text-sm text-slate-400">Mon, 27 Jan 2025 19:10:00 JST</p>
+                <h1 class="text-3xl font-semibold text-white">index.html と rss feed も生成できるようにした</h1>
+                <div class="flex items-center gap-3 text-sm text-slate-300">
+                    <img src="https://pbs.twimg.com/profile_images/1770102954382831616/H3LXaTgp_normal.jpg"
+                         alt="Yappo"
+                         class="h-8 w-8 rounded-full border border-slate-700"/>
+                    <a href="https://x.com/yappo" class="hover:text-white transition">Yappo</a>
+                </div>
+            </div>
+            <div class="prose prose-invert max-w-none">
+                <p>一旦エントリーページを生成してトップページとフィード購読もできるようになった風味。</p><p>ちょっとコード雑すぎるから綺麗にせんとや。。。</p>
+            </div>
+        </article>
+    </main>
+    <footer class="border-t border-slate-800 bg-slate-900/60">
+        <div class="mx-auto w-full max-w-4xl px-4 py-6 text-sm text-slate-400 flex items-center justify-between">
+            <span>© YappoLogs2</span>
+            <a href="https://x.com/yappo" class="hover:text-white transition">Yappo</a>
         </div>
-    </div>
-</article>
-<footer>
-    <p>
-        <small>
-            <a href="https://x.com/yappo">Yappo</a>
-        </small>
-    </p>
-</footer>
+    </footer>
+</div>
 </body>
 </html>
