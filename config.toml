@@ -11,3 +11,7 @@ faviconUrl = "/favicon.png"
 authorName = "Yappo"
 authorUrl = "https://x.com/yappo"
 authorIconUrl = "https://pbs.twimg.com/profile_images/1770102954382831616/H3LXaTgp_normal.jpg"
+imageThumbWidth = 480
+imageFullMaxWidth = 1920
+imageScaleMethod = "quality"
+imageJpegQuality = 0.9
