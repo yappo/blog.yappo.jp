@@ -11,57 +11,59 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"/> 
     <script src="https://cdn.tailwindcss.com"></script> 
 </head>
-<body class="bg-slate-950 text-slate-100 font-sans">
+<body class="bg-slate-950 text-slate-100 font-sans text-base leading-relaxed sm:text-lg">
 <div class="min-h-screen flex flex-col">
     <header class="border-b border-slate-800 bg-slate-900/50">
-        <div class="mx-auto w-full max-w-5xl px-4 py-6 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
-            <a href="https://blog.yappo.jp/" class="text-2xl font-semibold tracking-tight hover:text-white transition">
+        <div class="mx-auto w-full max-w-5xl px-4 sm:px-6 lg:px-8 py-6 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+            <a href="https://blog.yappo.jp/" class="text-2xl sm:text-3xl font-semibold tracking-tight hover:text-white transition">
                 YappoLogs2
             </a>
-            <a href="https://blog.yappo.jp/feed.xml" class="text-sm text-slate-300 hover:text-white transition">RSS Feed</a>
+            <a href="https://blog.yappo.jp/feed.xml" class="text-sm text-slate-300 hover:text-white transition">
+                RSS Feed
+            </a>
         </div>
     </header>
     <main class="flex-1">
-        <div class="mx-auto w-full max-w-5xl px-4 py-10">
-            <div class="grid gap-6">
+        <div class="mx-auto w-full max-w-5xl px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+            <div class="grid gap-5 sm:gap-6 md:grid-cols-2">
                 
-                    <a href="https://blog.yappo.jp/entry/2025/02/25/implemented-configuration/" class="rounded-2xl border border-slate-800 bg-slate-900/40 p-6 shadow-lg shadow-slate-900/40 flex flex-col gap-2 hover:border-slate-600 hover:bg-slate-900 transition">
+                    <a href="https://blog.yappo.jp/entry/2025/02/25/implemented-configuration/" class="rounded-2xl border border-slate-800 bg-slate-900/40 p-5 sm:p-6 shadow-lg shadow-slate-900/40 flex flex-col gap-3 hover:border-slate-600 hover:bg-slate-900 transition focus-visible:ring focus-visible:ring-slate-700 focus-visible:outline-none">
                         <p class="text-xs uppercase tracking-wide text-slate-400">Tue, 25 Feb 2025 22:22:48 JST</p>
-                        <h2 class="text-2xl font-semibold text-white">config.toml を実装したよ</h2>
-                        <p class="text-slate-300">各種ファイルパスをコードに書いてたのを外に出そうと思って早一ヶ月、ようやく実装した。documentRootPath = &amp;quot;docs/entry&amp;quot;
+                        <h2 class="text-xl sm:text-2xl font-semibold text-white leading-snug">config.toml を実装したよ</h2>
+                        <p class="text-sm sm:text-base text-slate-300">各種ファイルパスをコードに書いてたのを外に出そうと思って早一ヶ月、ようやく実装した。documentRootPath = &amp;quot;docs/entry&amp;quot;
 blogTopUrl = &amp;quot;https://blog.yappo.jp/&amp;quot;
 document...</p>
                     </a>
                 
-                    <a href="https://blog.yappo.jp/entry/2025/02/14/kwebscraper/" class="rounded-2xl border border-slate-800 bg-slate-900/40 p-6 shadow-lg shadow-slate-900/40 flex flex-col gap-2 hover:border-slate-600 hover:bg-slate-900 transition">
+                    <a href="https://blog.yappo.jp/entry/2025/02/14/kwebscraper/" class="rounded-2xl border border-slate-800 bg-slate-900/40 p-5 sm:p-6 shadow-lg shadow-slate-900/40 flex flex-col gap-3 hover:border-slate-600 hover:bg-slate-900 transition focus-visible:ring focus-visible:ring-slate-700 focus-visible:outline-none">
                         <p class="text-xs uppercase tracking-wide text-slate-400">Fri, 14 Feb 2025 06:37:25 JST</p>
-                        <h2 class="text-2xl font-semibold text-white">KWebScraper - なんとなく Kotlin で Web::Scraper 実装してみた</h2>
-                        <p class="text-slate-300">ふと Kotlin で DSL を実装してみたくなって、なんか題材ないかなと思ったら Web::Scraper が丁度良さそうな粒度だったので作ってみた。Perl だと同じ関数名でスコープごとに役割を変えていくって奴は local を使ってレキシカルスコープに絞ってコードリファレ...</p>
+                        <h2 class="text-xl sm:text-2xl font-semibold text-white leading-snug">KWebScraper - なんとなく Kotlin で Web::Scraper 実装してみた</h2>
+                        <p class="text-sm sm:text-base text-slate-300">ふと Kotlin で DSL を実装してみたくなって、なんか題材ないかなと思ったら Web::Scraper が丁度良さそうな粒度だったので作ってみた。Perl だと同じ関数名でスコープごとに役割を変えていくって奴は local を使ってレキシカルスコープに絞ってコードリファレ...</p>
                     </a>
                 
-                    <a href="https://blog.yappo.jp/entry/2025/01/29/metafile/" class="rounded-2xl border border-slate-800 bg-slate-900/40 p-6 shadow-lg shadow-slate-900/40 flex flex-col gap-2 hover:border-slate-600 hover:bg-slate-900 transition">
+                    <a href="https://blog.yappo.jp/entry/2025/01/29/metafile/" class="rounded-2xl border border-slate-800 bg-slate-900/40 p-5 sm:p-6 shadow-lg shadow-slate-900/40 flex flex-col gap-3 hover:border-slate-600 hover:bg-slate-900 transition focus-visible:ring focus-visible:ring-slate-700 focus-visible:outline-none">
                         <p class="text-xs uppercase tracking-wide text-slate-400">Wed, 29 Jan 2025 05:42:52 JST</p>
-                        <h2 class="text-2xl font-semibold text-white">meta.toml を実装</h2>
-                        <p class="text-slate-300">index.md ファイルに更新日時とかを書くダルダル運用だったけど、新しく index.md を追加したことを検知して publish date を自動で付与するようにした。
+                        <h2 class="text-xl sm:text-2xl font-semibold text-white leading-snug">meta.toml を実装</h2>
+                        <p class="text-sm sm:text-base text-slate-300">index.md ファイルに更新日時とかを書くダルダル運用だったけど、新しく index.md を追加したことを検知して publish date を自動で付与するようにした。
 ついでに update date も検知して更新できるようにしといた。これで更新あれば HTML 生成...</p>
                     </a>
                 
-                    <a href="https://blog.yappo.jp/entry/2025/01/27/support-index/" class="rounded-2xl border border-slate-800 bg-slate-900/40 p-6 shadow-lg shadow-slate-900/40 flex flex-col gap-2 hover:border-slate-600 hover:bg-slate-900 transition">
+                    <a href="https://blog.yappo.jp/entry/2025/01/27/support-index/" class="rounded-2xl border border-slate-800 bg-slate-900/40 p-5 sm:p-6 shadow-lg shadow-slate-900/40 flex flex-col gap-3 hover:border-slate-600 hover:bg-slate-900 transition focus-visible:ring focus-visible:ring-slate-700 focus-visible:outline-none">
                         <p class="text-xs uppercase tracking-wide text-slate-400">Mon, 27 Jan 2025 19:10:00 JST</p>
-                        <h2 class="text-2xl font-semibold text-white">index.html と rss feed も生成できるようにした</h2>
-                        <p class="text-slate-300">一旦エントリーページを生成してトップページとフィード購読もできるようになった風味。ちょっとコード雑すぎるから綺麗にせんとや。。。</p>
+                        <h2 class="text-xl sm:text-2xl font-semibold text-white leading-snug">index.html と rss feed も生成できるようにした</h2>
+                        <p class="text-sm sm:text-base text-slate-300">一旦エントリーページを生成してトップページとフィード購読もできるようになった風味。ちょっとコード雑すぎるから綺麗にせんとや。。。</p>
                     </a>
                 
-                    <a href="https://blog.yappo.jp/entry/2025/01/27/pologenize/" class="rounded-2xl border border-slate-800 bg-slate-900/40 p-6 shadow-lg shadow-slate-900/40 flex flex-col gap-2 hover:border-slate-600 hover:bg-slate-900 transition">
+                    <a href="https://blog.yappo.jp/entry/2025/01/27/pologenize/" class="rounded-2xl border border-slate-800 bg-slate-900/40 p-5 sm:p-6 shadow-lg shadow-slate-900/40 flex flex-col gap-3 hover:border-slate-600 hover:bg-slate-900 transition focus-visible:ring focus-visible:ring-slate-700 focus-visible:outline-none">
                         <p class="text-xs uppercase tracking-wide text-slate-400">Mon, 27 Jan 2025 07:00:00 JST</p>
-                        <h2 class="text-2xl font-semibold text-white">とりあえずmd2blogかいた</h2>
-                        <p class="text-slate-300">IntelliJ AI Assistant さんに手伝ってもらって取り敢えずは markdown から HTML 作ってくれる君を作ったので安心。。テンプレートエンジン使いたいけど取り敢えず kotlinx で HTML 書いてます。 Markdown parser は変なのおす...</p>
+                        <h2 class="text-xl sm:text-2xl font-semibold text-white leading-snug">とりあえずmd2blogかいた</h2>
+                        <p class="text-sm sm:text-base text-slate-300">IntelliJ AI Assistant さんに手伝ってもらって取り敢えずは markdown から HTML 作ってくれる君を作ったので安心。。テンプレートエンジン使いたいけど取り敢えず kotlinx で HTML 書いてます。 Markdown parser は変なのおす...</p>
                     </a>
                 
-                    <a href="https://blog.yappo.jp/entry/2025/01/26/reborn/" class="rounded-2xl border border-slate-800 bg-slate-900/40 p-6 shadow-lg shadow-slate-900/40 flex flex-col gap-2 hover:border-slate-600 hover:bg-slate-900 transition">
+                    <a href="https://blog.yappo.jp/entry/2025/01/26/reborn/" class="rounded-2xl border border-slate-800 bg-slate-900/40 p-5 sm:p-6 shadow-lg shadow-slate-900/40 flex flex-col gap-3 hover:border-slate-600 hover:bg-slate-900 transition focus-visible:ring focus-visible:ring-slate-700 focus-visible:outline-none">
                         <p class="text-xs uppercase tracking-wide text-slate-400">Sun, 26 Jan 2025 23:00:00 JST</p>
-                        <h2 class="text-2xl font-semibold text-white">そろそろ再開します〜</h2>
-                        <p class="text-slate-300">前のサーバがめっちゃクラッシュしてずっと放置しすぎてたけど、そろぼち再開しようということでここに再開します。
+                        <h2 class="text-xl sm:text-2xl font-semibold text-white leading-snug">そろそろ再開します〜</h2>
+                        <p class="text-sm sm:text-base text-slate-300">前のサーバがめっちゃクラッシュしてずっと放置しすぎてたけど、そろぼち再開しようということでここに再開します。
 note とか色々あるんだけど、やっぱエンジニアなら自前で CMS 作るよねー普通は。ということで作るところから始めよう。。。
 まだコード書いてすらいないので stati...</p>
                     </a>
