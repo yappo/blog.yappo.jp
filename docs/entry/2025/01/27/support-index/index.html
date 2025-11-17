@@ -7,7 +7,7 @@
     <link rel="icon" href="/favicon.png"/>
     <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://blog.yappo.jp/feed.xml"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"/> 
-    <script src="https://cdn.tailwindcss.com"></script> 
+    <script src="https://cdn.tailwindcss.com"></script>     <script src="/assets/pologen-images.js"></script> 
 </head>
 <body class="bg-slate-950 text-slate-100 font-sans">
 <div class="min-h-screen flex flex-col">
@@ -37,12 +37,42 @@
             </div>
         </article>
     </main>
+    <section class="mx-auto w-full max-w-4xl px-4 pb-12 flex justify-end">
+        <a
+            href="https://x.com/intent/post?text=index.html+%E3%81%A8+rss+feed+%E3%82%82%E7%94%9F%E6%88%90%E3%81%A7%E3%81%8D%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%97%E3%81%9F%20https%3A%2F%2Fblog.yappo.jp%2Fentry%2F2025%2F01%2F27%2Fsupport-index%2F"
+            target="_blank"
+            rel="noopener"
+            class="inline-flex items-center justify-center gap-2 rounded-xl border border-slate-800 bg-black px-4 py-3 text-white text-xs font-semibold tracking-wide hover:bg-slate-900 transition focus-visible:outline focus-visible:outline-slate-300 w-full sm:w-auto sm:px-5"
+        >
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="h-4 w-4"><path fill="currentColor" d="M18.244 2h3.308l-7.227 8.26L22 22h-6.843l-4.56-6.11L5.406 22H2.095l7.73-8.836L2 2h6.99l4.117 5.572zm-1.16 17.94h1.833L7.084 3.973H5.117z"/></svg>
+            Share on X
+        </a>
+    </section>
     <footer class="border-t border-slate-800 bg-slate-900/60">
         <div class="mx-auto w-full max-w-4xl px-4 py-6 text-sm text-slate-400 flex items-center justify-between">
             <span>© YappoLogs2</span>
             <a href="https://x.com/yappo" class="hover:text-white transition">Yappo</a>
         </div>
     </footer>
+</div>
+<div
+  id="pologen-image-overlay"
+  class="hidden fixed inset-0 z-50 bg-black/80 items-center justify-center"
+>
+  <button
+    type="button"
+    id="pologen-image-overlay-close"
+    class="absolute top-4 right-4 text-white text-2xl"
+    aria-label="Close"
+  >
+    ×
+  </button>
+  <img
+    id="pologen-image-overlay-img"
+    src=""
+    alt=""
+    class="max-w-[90vw] max-h-[90vh] rounded-xl shadow-2xl"
+  />
 </div>
 </body>
 </html>

@@ -9,7 +9,7 @@
           title="RSS Feed"
           href="https://blog.yappo.jp/feed.xml"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"/> 
-    <script src="https://cdn.tailwindcss.com"></script> 
+    <script src="https://cdn.tailwindcss.com"></script>     <script src="/assets/pologen-images.js"></script> 
 </head>
 <body class="bg-slate-950 text-slate-100 font-sans text-base leading-relaxed sm:text-lg">
 <div class="min-h-screen flex flex-col">
@@ -26,6 +26,12 @@
     <main class="flex-1">
         <div class="mx-auto w-full max-w-4xl px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
             <div class="flex flex-col gap-5">
+                
+                    <a href="https://blog.yappo.jp/entry/2025/11/16/pologen-upgrade/" class="rounded-2xl border border-slate-800 bg-slate-900/40 p-5 sm:p-6 shadow-lg shadow-slate-900/40 flex flex-col gap-3 hover:border-slate-600 hover:bg-slate-900 transition focus-visible:ring focus-visible:ring-slate-700 focus-visible:outline-none w-full">
+                        <p class="text-xs uppercase tracking-wide text-slate-400">Mon, 17 Nov 2025 21:55:22 JST</p>
+                        <h2 class="text-xl sm:text-2xl font-semibold text-white leading-snug">Pologen で Tailwind CSS &amp; daisy UI を使うようにしたよ！ Template Engine も変えたよ！！</h2>
+                        <p class="text-sm sm:text-base text-slate-300">JJUG CCC 2025 Fall に行って意識が高まってたので Pologen を色々と更新してたのでした。大きな課題としてはHTML Template を別ファイルにしたかったRSS Feed もちゃんとしたかったサイト情報とか著者情報がハードコーディングされすぎてて設定可...</p>
+                    </a>
                 
                     <a href="https://blog.yappo.jp/entry/2025/02/25/implemented-configuration/" class="rounded-2xl border border-slate-800 bg-slate-900/40 p-5 sm:p-6 shadow-lg shadow-slate-900/40 flex flex-col gap-3 hover:border-slate-600 hover:bg-slate-900 transition focus-visible:ring focus-visible:ring-slate-700 focus-visible:outline-none w-full">
                         <p class="text-xs uppercase tracking-wide text-slate-400">Tue, 25 Feb 2025 22:22:48 JST</p>
@@ -77,6 +83,25 @@ note とか色々あるんだけど、やっぱエンジニアなら自前で CM
             <a href="https://x.com/yappo" class="hover:text-white transition">Yappo</a>
         </div>
     </footer>
+</div>
+<div
+  id="pologen-image-overlay"
+  class="hidden fixed inset-0 z-50 bg-black/80 items-center justify-center"
+>
+  <button
+    type="button"
+    id="pologen-image-overlay-close"
+    class="absolute top-4 right-4 text-white text-2xl"
+    aria-label="Close"
+  >
+    ×
+  </button>
+  <img
+    id="pologen-image-overlay-img"
+    src=""
+    alt=""
+    class="max-w-[90vw] max-h-[90vh] rounded-xl shadow-2xl"
+  />
 </div>
 </body>
 </html>
