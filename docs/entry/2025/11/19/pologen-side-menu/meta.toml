@@ -1,5 +1,5 @@
 publishDate = "2025-11-19 06:25:45"
-updateDate = "2025-11-19 06:54:48"
+updateDate = "2025-11-19 07:09:56"
 bodyMd5 = "22460f05471c68971c27150d5b84e3b7d363f8c5025d2b86bea3de00f79cc116"
 title = "ブログにサイドメニューを追加したよ！！"
 summary = "CSS Frameworkも取り入れてちょっとは見やすくなったのでいい気になってサイドメニューも追加してみたのでした。あとOGP画像も対応です。追加機能OGP Imageモダンな記事サイトだとSNS …"
@@ -7,7 +7,7 @@ summary = "CSS Frameworkも取り入れてちょっとは見やすくなった�
 [[toc]]
     level = 2
     text = "追加機能"
-    id = "2ae6b632-6612-4d32-a58b-e756a57ba959"
+    id = "9c0705f9-8bb3-4542-8bed-3f06126fd7d1"
 
 [[toc]]
     level = 3
@@ -17,7 +17,7 @@ summary = "CSS Frameworkも取り入れてちょっとは見やすくなった�
 [[toc]]
     level = 3
     text = "サイドメニュー"
-    id = "fa963eeb-e5fc-48bd-9183-220f3ac8237e"
+    id = "dc44463f-003f-4008-b144-27b2115b6105"
 
 [[toc]]
     level = 3
@@ -37,4 +37,4 @@ summary = "CSS Frameworkも取り入れてちょっとは見やすくなった�
 [[toc]]
     level = 2
     text = "さいごに"
-    id = "a85542fe-1903-45a4-ab50-674e12c8b3dc"
+    id = "06558b36-6dfe-4968-aa9c-80e0f595beb3"
