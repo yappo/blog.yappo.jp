@@ -50,7 +50,7 @@
                     [&_ul]:list-disc [&_ul]:list-outside [&_ul]:pl-6 [&_ul>li]:my-2
                     [&_ol]:list-decimal [&_ol]:list-outside [&_ol]:pl-6 [&_ol>li]:my-2
                     [&_li>ul]:mt-2 [&_li>ol]:mt-2">
-                    <p>CSS Frameworkも取り入れてちょっとは見やすくなったのでいい気になってサイドメニューも追加してみたのでした。</p><p>あとOGP画像も対応です。</p><h2 id="95283054-42c2-49ef-86d3-d3cd03ac3abb">追加機能</h2><h3 id="ogp-image">OGP Image</h3><p>モダンな記事サイトだとSNS に投稿すると記事タイトルとか内容を一枚の画像にして共有してくれるあれあるじゃ無いですか。</p><p>それ作ってみました。<a href="https://github.com/yappo/Pologen/blob/main/src/main/kotlin/OGPGenerator.kt">OGPGenerator.kt</a>を見ると分かるんですが、なんかすっごい頑張ってる。。。
+                    <p>CSS Frameworkも取り入れてちょっとは見やすくなったのでいい気になってサイドメニューも追加してみたのでした。</p><p>あとOGP画像も対応です。</p><h2 id="2ae6b632-6612-4d32-a58b-e756a57ba959">追加機能</h2><h3 id="ogp-image">OGP Image</h3><p>モダンな記事サイトだとSNS に投稿すると記事タイトルとか内容を一枚の画像にして共有してくれるあれあるじゃ無いですか。</p><p>それ作ってみました。<a href="https://github.com/yappo/Pologen/blob/main/src/main/kotlin/OGPGenerator.kt">OGPGenerator.kt</a>を見ると分かるんですが、なんかすっごい頑張ってる。。。
 ChatGPT-5.1 にソースコード見せて Zenn とかでやってるOGP画像作りたいよ〜いい感じでやって！って言って考えてもらって、ある程度まとまったら「Codexに書いてもらうからプロンプト作って」って言って書いてもらってる感じなので、あんま頑張ってない。</p><p>デフォルトのフォントでも日本語の画像作ってくれますが、好きなフォントがあればフォントファイルのパスを設定ファイルに書いとけば使ってくれます。</p><h4>微調整方法など</h4><p>標準だと SansSerif 使っといてという実装にしてて、自分用に LINE Seed 使ってみたら結構窮屈だったので、比較画像を ChatGPT に渡して「これどう思う？いい感じになる？調整してCodexのプロンプト書いて」ってお願いしたらいい感じになりました。
 一生人任せ！！！
 <figure class="my-8">
@@ -69,7 +69,7 @@ ChatGPT-5.1 にソースコード見せて Zenn とかでやってるOGP画像�
   </button>
 </figure>
 上が SansSerif で下が LINE Seed そして左が調整前で右が調整後です。
-なんも考えないでもデザインまでやってくれるなんて、、、描きたくない類の細かいコードまで書いてくれて。。。</p><h3 id="f9187e05-88af-4db0-b28b-5f9c7baafdc4">サイドメニュー</h3><p>丸っとサイドメニューも追加です。</p><ul><li>著者情報</li><li>最新エントリ</li><li>リンク集</li><li>目次</li></ul><p>といったものを入れてあります。よくあるやつですね。</p><h3 id="toc">TOC</h3><p>目次もモダンな感じで実装してもらったが、思ったように動かないので後日マシにしたい。。。</p><p><figure class="my-8">
+なんも考えないでもデザインまでやってくれるなんて、、、描きたくない類の細かいコードまで書いてくれて。。。</p><h3 id="fa963eeb-e5fc-48bd-9183-220f3ac8237e">サイドメニュー</h3><p>丸っとサイドメニューも追加です。</p><ul><li>著者情報</li><li>最新エントリ</li><li>リンク集</li><li>目次</li></ul><p>といったものを入れてあります。よくあるやつですね。</p><h3 id="toc">TOC</h3><p>目次もモダンな感じで実装してもらったが、思ったように動かないので後日マシにしたい。。。</p><p><figure class="my-8">
   <button
     type="button"
     class="pologen-image-thumb block"
@@ -83,8 +83,8 @@ ChatGPT-5.1 にソースコード見せて Zenn とかでやってるOGP画像�
       class="max-w-full h-auto rounded-xl shadow-md my-4"
     />
   </button>
-</figure></p><h3 id="meta-toml">meta.toml</h3><p>直近のエントリリストもサイドメニューに出すようにしたので、今後エントリが増えた時に最適化しやすいようにメタデータを少し増やした。
-使うかどうかはわからない。。。</p><h2 id="9970bcd8-09ba-43e4-bf56-7224b853496c">さいごに</h2><p>丸っと一回のプロンプトでサイドメニュー作ろうとしたので、だいぶ限界だった感ある。。
+</figure></p><p>よくあるサイトにあるように、今見てるところの目次が見えるようになってるんだけどスクロールすると消えるから意味ない感あるのをどうにかしたいけど、良い UX のアイディアあんまない。</p><h3 id="meta-toml">meta.toml</h3><p>直近のエントリリストもサイドメニューに出すようにしたので、今後エントリが増えた時に最適化しやすいようにメタデータを少し増やした。
+使うかどうかはわからない。。。</p><h2 id="css-style">CSS Style 調整</h2><p>今までまともに h1, h2 タグとかリストとか使ってなかったから気が付かなかったけど、まともな見た目になって真面目に書いてみると存外雑デザインになってるのに気がついたから CSS 調整して読みやすくした。。。</p><h2 id="a85542fe-1903-45a4-ab50-674e12c8b3dc">さいごに</h2><p>丸っと一回のプロンプトでサイドメニュー作ろうとしたので、だいぶ限界だった感ある。。
 実装の不備を指摘するとめちゃくちゃ場当たりな事をくりかえすモードになるんで中々手厳しいけど、、まあ。。。。</p>
                 </div>
             </article>
@@ -110,7 +110,7 @@ ChatGPT-5.1 にソースコード見せて Zenn とかでやってるOGP画像�
                             
                                 
                                     <li>
-                                        <a href="#95283054-42c2-49ef-86d3-d3cd03ac3abb" class="pologen-toc-link">追加機能</a>
+                                        <a href="#2ae6b632-6612-4d32-a58b-e756a57ba959" class="pologen-toc-link">追加機能</a>
                                     </li>
                                 
                             
@@ -122,7 +122,7 @@ ChatGPT-5.1 にソースコード見せて Zenn とかでやってるOGP画像�
                             
                                 
                                     <li class="ml-4">
-                                        <a href="#f9187e05-88af-4db0-b28b-5f9c7baafdc4" class="pologen-toc-link">サイドメニュー</a>
+                                        <a href="#fa963eeb-e5fc-48bd-9183-220f3ac8237e" class="pologen-toc-link">サイドメニュー</a>
                                     </li>
                                 
                             
@@ -140,7 +140,13 @@ ChatGPT-5.1 にソースコード見せて Zenn とかでやってるOGP画像�
                             
                                 
                                     <li>
-                                        <a href="#9970bcd8-09ba-43e4-bf56-7224b853496c" class="pologen-toc-link">さいごに</a>
+                                        <a href="#css-style" class="pologen-toc-link">CSS Style 調整</a>
+                                    </li>
+                                
+                            
+                                
+                                    <li>
+                                        <a href="#a85542fe-1903-45a4-ab50-674e12c8b3dc" class="pologen-toc-link">さいごに</a>
                                     </li>
                                 
                             
