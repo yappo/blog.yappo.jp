@@ -1,3 +1,6 @@
 publishDate = "2025-01-29 05:42:52"
 updateDate = "2025-01-29 05:42:52"
 bodyMd5 = "1fe24c851641862c42d01de56fc24b9a0a883629394c2389e865b972b994ba52"
+title = "meta.toml を実装"
+summary = "index.md ファイルに更新日時とかを書くダルダル運用だったけど、新しく index.md を追加したことを検知して publish date を自動で付与するようにした。 ついでに update…"
+

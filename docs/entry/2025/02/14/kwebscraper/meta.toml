@@ -1,3 +1,6 @@
 publishDate = "2025-02-14 06:37:25"
 updateDate = "2025-02-14 06:39:46"
 bodyMd5 = "aab57d7a34f616e6d647b857a737a4c191e541d4c1c48baa38d3c3226473e9cc"
+title = "KWebScraper - なんとなく Kotlin で Web::Scraper 実装してみた"
+summary = "ふと Kotlin で DSL を実装してみたくなって、なんか題材ないかなと思ったら Web::Scraper が丁度良さそうな粒度だったので作ってみた。Perl だと同じ関数名でスコープごとに役割を…"
+

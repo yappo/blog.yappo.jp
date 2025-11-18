@@ -1,3 +1,6 @@
 publishDate = "2025-01-27 07:00:00"
 updateDate = "2025-01-27 07:00:00"
 bodyMd5 = "265450327d3be221ea6c7eafc09280976b1ebfab5f7197b1eac735a82a47fbbd"
+title = "とりあえずmd2blogかいた"
+summary = "IntelliJ AI Assistant さんに手伝ってもらって取り敢えずは markdown から HTML 作ってくれる君を作ったので安心。。テンプレートエンジン使いたいけど取り敢えず kotl…"
+
