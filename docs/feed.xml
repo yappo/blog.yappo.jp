@@ -6,7 +6,18 @@
         <atom:link href="https://blog.yappo.jp/feed.xml" rel="self" type="application/rss+xml"/>
         <description>Yappoのブログだよ</description>
         <language>ja</language>
-        <pubDate>Mon, 17 Nov 2025 12:55:22 GMT</pubDate>
+        <pubDate>Tue, 18 Nov 2025 21:25:45 GMT</pubDate>
+        
+            <item>
+                <title>ブログにサイドメニューを追加したよ！！</title>
+                <link>https://blog.yappo.jp/entry/2025/11/19/pologen-side-menu/</link>
+                <description/>
+                <content:encoded>
+CSS Frameworkも取り入れてちょっとは見やすくなったのでいい気になってサイドメニューも追加してみたのでした。あとOGP画像も対応です。追加機能OGP Imageモダンな記事サイトだとSNS に投稿すると記事タイトルとか内容を一枚の画像にして共有してくれるあれあるじゃ無い...
+                </content:encoded>
+                <pubDate>Tue, 18 Nov 2025 21:25:45 GMT</pubDate>
+                <guid>https://blog.yappo.jp/entry/2025/11/19/pologen-side-menu/</guid>
+            </item>
         
             <item>
                 <title>Pologen で Tailwind CSS &amp; daisy UI を使うようにしたよ！ Template Engine も変えたよ！！</title>

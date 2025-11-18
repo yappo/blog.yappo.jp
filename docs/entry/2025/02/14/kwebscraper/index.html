@@ -15,7 +15,7 @@
     <meta property="og:image" content="https://blog.yappo.jp/entry/2025/02/14/kwebscraper/ogp.png"/>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"/> 
-    <script src="https://cdn.tailwindcss.com"></script>     <script src="/entry/assets/pologen-images.js"></script> 
+    <script src="https://cdn.tailwindcss.com"></script>     <script src="/entry/assets/pologen.js"></script> 
 </head>
 <body class="bg-slate-950 text-slate-100 font-sans">
 <div class="min-h-screen flex flex-col">
@@ -33,7 +33,7 @@
             <article class="lg:w-2/3 space-y-8">
                 <div class="space-y-2">
                     <p class="text-sm text-slate-400">Fri, 14 Feb 2025 06:37:25 JST</p>
-                    <h1 class="text-3xl font-semibold text-white">KWebScraper - なんとなく Kotlin で Web::Scraper 実装してみた</h1>
+                    <h1 class="text-3xl md:text-4xl font-bold text-white leading-tight">KWebScraper - なんとなく Kotlin で Web::Scraper 実装してみた</h1>
                     <div class="flex items-center gap-3 text-sm text-slate-300">
                         <img src="https://pbs.twimg.com/profile_images/1770102954382831616/H3LXaTgp_normal.jpg"
                              alt="Yappo"
@@ -41,7 +41,15 @@
                         <a href="https://x.com/yappo" class="hover:text-white transition">Yappo</a>
                     </div>
                 </div>
-                <div class="prose prose-invert max-w-none">
+                <div class="prose prose-invert max-w-none
+                    [&_h2]:text-2xl [&_h2]:md:text-3xl [&_h2]:font-semibold [&_h2]:mt-10 [&_h2]:mb-6 [&_h2]:leading-tight
+                    [&_h3]:text-xl [&_h3]:md:text-2xl [&_h3]:font-semibold [&_h3]:mt-8 [&_h3]:mb-4 [&_h3]:leading-snug
+                    [&_h4]:text-lg [&_h4]:md:text-xl [&_h4]:font-semibold [&_h4]:mt-6 [&_h4]:mb-3
+                    [&_h5]:text-base [&_h5]:font-semibold [&_h5]:mt-5 [&_h5]:mb-3
+                    [&_h6]:text-sm [&_h6]:font-semibold [&_h6]:mt-4 [&_h6]:mb-2
+                    [&_ul]:list-disc [&_ul]:list-outside [&_ul]:pl-6 [&_ul>li]:my-2
+                    [&_ol]:list-decimal [&_ol]:list-outside [&_ol]:pl-6 [&_ol>li]:my-2
+                    [&_li>ul]:mt-2 [&_li>ol]:mt-2">
                     <p>ふと Kotlin で DSL を実装してみたくなって、なんか題材ないかなと思ったら <a href="https://metacpan.org/pod/Web::Scraper">Web::Scraper</a> が丁度良さそうな粒度だったので作ってみた。</p><p>Perl だと同じ関数名でスコープごとに役割を変えていくって奴は <code>local</code> を使ってレキシカルスコープに絞ってコードリファレンスを場面場面で変えていくって感じでやっていくんだけど。
 Kotlin の場合は、レシーバ付き関数リテラルを使ったら良いのかなと思って作ってみたら普通に作れた。</p><p><code>scraper</code> の中にある <code>process</code> と、 <code>process</code> の中にある <code>process</code> は別のクラスにメソッド生やしてるんだけど、なんかもっとちゃんとした書き方ありそう。
 Perl の Web::Scraper のほうは取得したデータのハッシュへの置き換えを key/value の形で指定しやすい感じで作ってるんだけど、 Builder 的に組み立てずに it に取得できた Element Object を渡しとくので、普通にコード書いて　Object を作ってくださいな。という感じで</p><p>実装は下記の様な感じです。</p><script src="https://gist.github.com/yappo/3e2d77b3ddb9146eee7e49557151fa41.js"></script>
@@ -68,6 +76,13 @@ Perl の Web::Scraper のほうは取得したデータのハッシュへの置�
                     <div class="card-body">
                         <h3 class="card-title text-white text-base">Recent posts</h3>
                         <ul class="space-y-2 text-sm">
+                        
+                            <li>
+                                <a href="https://blog.yappo.jp/entry/2025/11/19/pologen-side-menu/" class="block text-slate-300 hover:text-white transition">
+                                    ブログにサイドメニューを追加したよ！！
+                                </a>
+                                <p class="text-xs text-slate-500">Wed, 19 Nov 2025 06:25:45 JST</p>
+                            </li>
                         
                             <li>
                                 <a href="https://blog.yappo.jp/entry/2025/11/16/pologen-upgrade/" class="block text-slate-300 hover:text-white transition">

@@ -1,0 +1,35 @@
+publishDate = "2025-11-19 06:25:45"
+updateDate = "2025-11-19 06:47:27"
+bodyMd5 = "208044bd98b22c1688ea3c94f128e133f48eea10c4c5f1fa4239c42c8f330130"
+title = "ブログにサイドメニューを追加したよ！！"
+summary = "CSS Frameworkも取り入れてちょっとは見やすくなったのでいい気になってサイドメニューも追加してみたのでした。あとOGP画像も対応です。追加機能OGP Imageモダンな記事サイトだとSNS …"
+
+[[toc]]
+    level = 2
+    text = "追加機能"
+    id = "95283054-42c2-49ef-86d3-d3cd03ac3abb"
+
+[[toc]]
+    level = 3
+    text = "OGP Image"
+    id = "ogp-image"
+
+[[toc]]
+    level = 3
+    text = "サイドメニュー"
+    id = "f9187e05-88af-4db0-b28b-5f9c7baafdc4"
+
+[[toc]]
+    level = 3
+    text = "TOC"
+    id = "toc"
+
+[[toc]]
+    level = 3
+    text = "meta.toml"
+    id = "meta-toml"
+
+[[toc]]
+    level = 2
+    text = "さいごに"
+    id = "9970bcd8-09ba-43e4-bf56-7224b853496c"
