@@ -2,5 +2,5 @@ publishDate = "2025-02-25 22:22:48"
 updateDate = "2025-02-25 22:22:48"
 bodyMd5 = "22bbc3d09af7958a116436a1647c65511904540f2dfa41b65718510b67b9f6b4"
 title = "config.toml を実装したよ"
-summary = "各種ファイルパスをコードに書いてたのを外に出そうと思って早一ヶ月、ようやく実装した。documentRootPath = &quot;docs/entry&quot; blogTopUrl = &qu…"
+summary = "各種ファイルパスをコードに書いてたのを外に出そうと思って早一ヶ月、ようやく実装した。documentRootPath = \"docs/entry\" blogTopUrl = \"https://blog…"
 
