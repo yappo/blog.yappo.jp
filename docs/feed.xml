@@ -6,7 +6,18 @@
         <atom:link href="https://blog.yappo.jp/feed.xml" rel="self" type="application/rss+xml"/>
         <description>Yappoのブログだよ</description>
         <language>ja</language>
-        <pubDate>Tue, 18 Nov 2025 21:25:45 GMT</pubDate>
+        <pubDate>Mon, 24 Nov 2025 11:22:17 GMT</pubDate>
+        
+            <item>
+                <title>設定ファイルやクラス構造を諸々変えたよ</title>
+                <link>https://blog.yappo.jp/entry/2025/11/24/update-structure/</link>
+                <description/>
+                <content:encoded>
+meta.tomlの読み込みがおかしいなと思ったらktomlをだいぶ古いの使ってたので0.7.1にアップデート。そして config.toml がだいぶ雑だったので構造化したのであった。。あとは、コード全体も Main.kt に固まりがちだったので DDD に倣って構成をガラッと...
+                </content:encoded>
+                <pubDate>Mon, 24 Nov 2025 11:22:17 GMT</pubDate>
+                <guid>https://blog.yappo.jp/entry/2025/11/24/update-structure/</guid>
+            </item>
         
             <item>
                 <title>ブログにサイドメニューを追加したよ！！</title>
