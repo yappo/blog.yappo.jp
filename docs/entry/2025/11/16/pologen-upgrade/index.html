@@ -57,82 +57,22 @@
                     [&_ol]:list-decimal [&_ol]:list-outside [&_ol]:pl-6 [&_ol>li]:my-2
                     [&_li>ul]:mt-2 [&_li>ol]:mt-2">
                     <p>JJUG CCC 2025 Fall に行って意識が高まってたので <a href="https://github.com/yappo/Pologen">Pologen</a> を色々と更新してたのでした。</p><p>大きな課題としては</p><ul><li>HTML Template を別ファイルにしたかった</li><li>RSS Feed もちゃんとしたかった</li><li>サイト情報とか著者情報がハードコーディングされすぎてて設定可能にしたかった</li><li>画像もちゃんとハンドリングしたかった</li><li>X へ簡単にシェアしたかった</li><li>CSS Framework ちゃんと対応したかった</li></ul><p>などなど色々課題があったので</p><p>ChatGPT に色々聞きながら方針を決めつつ。。
-<figure class="my-8">
-  <button
-    type="button"
-    class="pologen-image-thumb block"
-    data-full-src="chatgpt-full.png"
-    data-alt="ChatGPT"
-  >
-    <img
-      src="chatgpt-thumb.png"
-      alt="ChatGPT"
-      loading="lazy"
-      class="max-w-full h-auto rounded-xl shadow-md my-4"
-    />
-  </button>
-</figure>
-<figure class="my-8">
-  <button
-    type="button"
-    class="pologen-image-thumb block"
-    data-full-src="chatgpt-prompt-full.png"
-    data-alt="ChatGPT Prompt"
-  >
-    <img
-      src="chatgpt-prompt-thumb.png"
-      alt="ChatGPT Prompt"
-      loading="lazy"
-      class="max-w-full h-auto rounded-xl shadow-md my-4"
-    />
-  </button>
-</figure></p><p>Codex に実装してもらう。実装用のプロンプトは ChatGPT 側に色々相談してプロンプトを作ってもらう。
-<figure class="my-8">
-  <button
-    type="button"
-    class="pologen-image-thumb block"
-    data-full-src="codex-full.png"
-    data-alt="Codex"
-  >
-    <img
-      src="codex-thumb.png"
-      alt="Codex"
-      loading="lazy"
-      class="max-w-full h-auto rounded-xl shadow-md my-4"
-    />
-  </button>
-</figure></p><p>などなどをしていくうちにいい感じになりました。</p><ul><li>Tailwind CSS &amp; daisy UI</li><li>jte (Java Template Engine)</li><li>imagescalar</li></ul><p>あたりを使ってます。
+<button type="button" class="pologen-image-thumb block" data-full-src="./chatgpt-full.png" data-alt="ChatGPT">
+    <img src="./chatgpt-thumb.png" alt="ChatGPT" loading="lazy" class="max-w-full h-auto rounded-xl shadow-md my-4"/>
+</button>
+<button type="button" class="pologen-image-thumb block" data-full-src="./chatgpt-prompt-full.png" data-alt="ChatGPT Prompt">
+    <img src="./chatgpt-prompt-thumb.png" alt="ChatGPT Prompt" loading="lazy" class="max-w-full h-auto rounded-xl shadow-md my-4"/>
+</button></p><p>Codex に実装してもらう。実装用のプロンプトは ChatGPT 側に色々相談してプロンプトを作ってもらう。
+<button type="button" class="pologen-image-thumb block" data-full-src="./codex-full.png" data-alt="Codex">
+    <img src="./codex-thumb.png" alt="Codex" loading="lazy" class="max-w-full h-auto rounded-xl shadow-md my-4"/>
+</button></p><p>などなどをしていくうちにいい感じになりました。</p><ul><li>Tailwind CSS &amp; daisy UI</li><li>jte (Java Template Engine)</li><li>imagescalar</li></ul><p>あたりを使ってます。
 モダンでナウイやつでいっちょよろ！！！って言っていい感じに仕上げてもらいました。</p><p>現状は Markdown でエントリ各感じなんで IntelliJ で書いてるとこんな感じでプレビューしながらかけて楽。IntteliJじゃなくていいけど。。
-<figure class="my-8">
-  <button
-    type="button"
-    class="pologen-image-thumb block"
-    data-full-src="intellij-full.png"
-    data-alt="IntelliJ"
-  >
-    <img
-      src="intellij-thumb.png"
-      alt="IntelliJ"
-      loading="lazy"
-      class="max-w-full h-auto rounded-xl shadow-md my-4"
-    />
-  </button>
-</figure></p><p>画像ファイル名もサジェストしてくれていい感じよねー
-<figure class="my-8">
-  <button
-    type="button"
-    class="pologen-image-thumb block"
-    data-full-src="intellij-suggest-full.png"
-    data-alt="IntelliJ Suggest"
-  >
-    <img
-      src="intellij-suggest-thumb.png"
-      alt="IntelliJ Suggest"
-      loading="lazy"
-      class="max-w-full h-auto rounded-xl shadow-md my-4"
-    />
-  </button>
-</figure></p>
+<button type="button" class="pologen-image-thumb block" data-full-src="./intellij-full.png" data-alt="IntelliJ">
+    <img src="./intellij-thumb.png" alt="IntelliJ" loading="lazy" class="max-w-full h-auto rounded-xl shadow-md my-4"/>
+</button></p><p>画像ファイル名もサジェストしてくれていい感じよねー
+<button type="button" class="pologen-image-thumb block" data-full-src="./intellij-suggest-full.png" data-alt="IntelliJ Suggest">
+    <img src="./intellij-suggest-thumb.png" alt="IntelliJ Suggest" loading="lazy" class="max-w-full h-auto rounded-xl shadow-md my-4"/>
+</button></p>
                 </div>
             </article>
             <aside class="lg:w-1/3 space-y-4">

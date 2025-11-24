@@ -1,6 +1,6 @@
 publishDate = "2025-11-17 21:55:22"
-updateDate = "2025-11-17 21:55:22"
-bodyMd5 = "4d7bd600f99c3a792ffd70dfb18ada13e0cf4d8d87dcb9238ccdbde88d83cc08"
+updateDate = "2025-11-24 20:05:34"
+bodyMd5 = "396556011b1ad4a045c21d70bcacfe17faa7f0467f913841a9e764790407c2f6"
 title = "Pologen で Tailwind CSS & daisy UI を使うようにしたよ！ Template Engine も変えたよ！！"
 summary = "JJUG CCC 2025 Fall に行って意識が高まってたので Pologen を色々と更新してたのでした。大きな課題としてはHTML Template を別ファイルにしたかったRSS Feed …"
 
