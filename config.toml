@@ -1,30 +1,48 @@
-documentRootPath = "docs/entry"
+[paths]
+documentRoot = "docs/entry"
+indexHtml = "docs/index.html"
+feedXml = "docs/feed.xml"
+
+[site]
 blogTopUrl = "https://blog.yappo.jp/"
 documentBaseUrl = "https://blog.yappo.jp/entry/"
-feedXmlPath = "docs/feed.xml"
 feedXmlUrl = "https://blog.yappo.jp/feed.xml"
-indexHtmlPath = "docs/index.html"
-siteTitle = "YappoLogs2"
-siteDescription = "Yappoのブログだよ"
-siteLanguage = "ja"
+title = "YappoLogs2"
+description = "Yappoのブログだよ"
+language = "ja"
 faviconUrl = "/favicon.png"
-authorName = "Yappo"
-authorUrl = "https://x.com/yappo"
-authorIconUrl = "https://pbs.twimg.com/profile_images/1770102954382831616/H3LXaTgp_normal.jpg"
-imageThumbWidth = 480
-imageFullMaxWidth = 1920
-imageScaleMethod = "quality"
-imageJpegQuality = 0.9
+
+[author]
+name = "Yappo"
+url = "https://x.com/yappo"
+iconUrl = "https://pbs.twimg.com/profile_images/1770102954382831616/H3LXaTgp_normal.jpg"
+
+[images]
+thumbWidth = 480
+fullMaxWidth = 1920
+scaleMethod = "quality"
+jpegQuality = 0.9
+
+[assets]
 stylesheets = ["https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"]
 scripts = ["https://cdn.tailwindcss.com", "/entry/assets/pologen.js"]
-ogpEnabled = true
-ogpWidth = 1200
-ogpHeight = 630
-ogpBackgroundColor = "#101827"
-ogpTitleColor = "#FFFFFF"
-ogpBodyColor = "#E5E7EB"
-ogpAccentColor = "#F97316"
-ogpFontPath = "fonts/LINESeedJP_TTF_Rg.ttf"
-ogpAuthorIconPath = "docs/entry/assets/yappo.jpg"
+
+[ogp]
+enabled = true
+width = 1200
+height = 630
+backgroundColor = "#101827"
+titleColor = "#FFFFFF"
+bodyColor = "#E5E7EB"
+accentColor = "#F97316"
+fontPath = "fonts/LINESeedJP_TTF_Rg.ttf"
+authorIconPath = "docs/entry/assets/yappo.jpg"
+
+[sidebar]
 recentEntryCount = 10
-links = { "GitHub" = "https://github.com/yappo", "X" = "https://x.com/yappo", "Pologen" = "https://github.com/yappo/Pologen", "Blog repository" = "https://github.com/yappo/blog.yappo.jp" }
+
+[links]
+"GitHub" = "https://github.com/yappo"
+"X" = "https://x.com/yappo"
+"Pologen" = "https://github.com/yappo/Pologen"
+"Blog repository" = "https://github.com/yappo/blog.yappo.jp"
