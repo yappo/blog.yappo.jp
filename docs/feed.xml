@@ -6,7 +6,18 @@
         <atom:link href="https://blog.yappo.jp/feed.xml" rel="self" type="application/rss+xml"/>
         <description>Yappoのブログだよ</description>
         <language>ja</language>
-        <pubDate>Wed, 31 Dec 2025 12:28:10 GMT</pubDate>
+        <pubDate>Fri, 06 Mar 2026 11:04:20 GMT</pubDate>
+        
+            <item>
+                <title>【悲報】Open AI の GPT-5.4 が出た から なんJ のクソスレを創作してもらったらしんみり大作が出来てしまい全米が泣いた？</title>
+                <link>https://blog.yappo.jp/entry/2026/03/06/gpt-5.4-make-nanjj-thread/</link>
+                <description/>
+                <content:encoded>
+以下のポストを見かけて「ほなワイも作ってもらおか」と思ってもらったら思いもよらぬものができたのでシェア。。GPT5.4による人類最後の日のなんJスレ pic.twitter.com/Z7V0KJvtlf&amp;mdash; さいぴ🐣 (saip) (@_saip_) March 5,...
+                </content:encoded>
+                <pubDate>Fri, 06 Mar 2026 11:04:20 GMT</pubDate>
+                <guid>https://blog.yappo.jp/entry/2026/03/06/gpt-5.4-make-nanjj-thread/</guid>
+            </item>
         
             <item>
                 <title>生成AI時代のOGP画像生成にはHeadless Browserは不要説</title>
