@@ -6,7 +6,18 @@
         <atom:link href="https://blog.yappo.jp/feed.xml" rel="self" type="application/rss+xml"/>
         <description>Yappoのブログだよ</description>
         <language>ja</language>
-        <pubDate>Fri, 06 Mar 2026 11:04:20 GMT</pubDate>
+        <pubDate>Wed, 22 Jul 2026 02:39:10 GMT</pubDate>
+        
+            <item>
+                <title>22年前に作ってた本番投入してた検索エンジン Yappod を大AI時代の今風に作り替えてる話</title>
+                <link>https://blog.yappo.jp/entry/2026/07/22/yappod/</link>
+                <description/>
+                <content:encoded>
+その昔 iYappo という検索サイトがありまして、メインの方は Rast を導入したり最終形態は MySQL + Senna で作っていたんですが、別口の方も C でまるっと書いて色々やってたことがあったんですね。メインとは違う方の実験としても自前で検索エンジンを書いて一般公開...
+                </content:encoded>
+                <pubDate>Wed, 22 Jul 2026 02:39:10 GMT</pubDate>
+                <guid>https://blog.yappo.jp/entry/2026/07/22/yappod/</guid>
+            </item>
         
             <item>
                 <title>【悲報】Open AI の GPT-5.4 が出た から なんJ のクソスレを創作してもらったらしんみり大作が出来てしまい全米が泣いた？</title>

@@ -1,0 +1,30 @@
+publishDate = "2026-07-22 11:39:10"
+updateDate = "2026-07-22 11:47:30"
+bodyMd5 = "11e24489a600b96c9299028c6587a0f6d298c8e79e83aafa6535a57a3212e499"
+title = "22年前に作ってた本番投入してた検索エンジン Yappod を大AI時代の今風に作り替えてる話"
+summary = "その昔 iYappo という検索サイトがありまして、メインの方は Rast を導入したり最終形態は MySQL + Senna で作っていたんですが、別口の方も C でまるっと書いて色々やってたことが…"
+
+[[toc]]
+    level = 2
+    text = "LLM っていいですね"
+    id = "llm"
+
+[[toc]]
+    level = 2
+    text = "Yappod とは"
+    id = "yappod"
+
+[[toc]]
+    level = 2
+    text = "Yappod2 を作ってる"
+    id = "yappod2"
+
+[[toc]]
+    level = 2
+    text = "Local LLM でも Yappod2 の機能が試せます"
+    id = "local-llm-yappod2"
+
+[[toc]]
+    level = 2
+    text = "いまこんなことをする意味"
+    id = "heading-9b5f4f58925037e8"

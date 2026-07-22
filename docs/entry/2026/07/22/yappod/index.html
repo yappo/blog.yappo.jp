@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>22年前に作ってた本番投入してた検索エンジン Yappod を大AI時代の今風に作り替えてる話 - YappoLogs2</title>
+    <meta name="description" content="Yappoのブログだよ"/>
+    <link rel="icon" href="/favicon.png"/>
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://blog.yappo.jp/feed.xml"/>
+
+    <meta property="og:title" content="22年前に作ってた本番投入してた検索エンジン Yappod を大AI時代の今風に作り替えてる話"/>
+    
+        <meta property="og:description" content="その昔 iYappo という検索サイトがありまして、メインの方は Rast を導入したり最終形態は MySQL + Senna で作っていたんですが、別口の方も C でまるっと書いて色々やってたことが…"/>
+    
+    <meta property="og:image" content="https://blog.yappo.jp/entry/2026/07/22/yappod/ogp.png"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:title" content="22年前に作ってた本番投入してた検索エンジン Yappod を大AI時代の今風に作り替えてる話"/>
+    
+        <meta name="twitter:description" content="その昔 iYappo という検索サイトがありまして、メインの方は Rast を導入したり最終形態は MySQL + Senna で作っていたんですが、別口の方も C でまるっと書いて色々やってたことが…"/>
+    
+    <meta name="twitter:image" content="https://blog.yappo.jp/entry/2026/07/22/yappod/ogp.png"/>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"/> 
+    <script src="https://cdn.tailwindcss.com"></script>     <script src="/entry/assets/pologen.js"></script> 
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans">
+<div class="min-h-screen flex flex-col">
+    <header class="border-b border-slate-800 bg-slate-900/50">
+        <div class="mx-auto w-full max-w-6xl px-4 py-6 flex items-center justify-between gap-4">
+            <div>
+                <a href="https://blog.yappo.jp/" class="text-xl font-semibold tracking-tight hover:text-slate-200 transition">
+                    YappoLogs2
+                </a>
+            </div>
+        </div>
+    </header>
+    <main class="flex-1">
+        <div class="mx-auto w-full max-w-6xl px-4 py-10 flex flex-col lg:flex-row gap-8">
+            <article class="lg:w-2/3 space-y-8">
+                <div class="space-y-2">
+                    <p class="text-sm text-slate-400">Wed, 22 Jul 2026 11:39:10 JST</p>
+                    <h1 class="text-3xl md:text-4xl font-bold text-white leading-tight">22年前に作ってた本番投入してた検索エンジン Yappod を大AI時代の今風に作り替えてる話</h1>
+                    <div class="flex items-center gap-3 text-sm text-slate-300">
+                        <img src="https://pbs.twimg.com/profile_images/1770102954382831616/H3LXaTgp_normal.jpg"
+                             alt="Yappo"
+                             class="h-8 w-8 rounded-full border border-slate-700"/>
+                        <a href="https://x.com/yappo" class="hover:text-white transition">Yappo</a>
+                    </div>
+                </div>
+                <div class="prose prose-invert max-w-none
+                    [&_h2]:text-2xl [&_h2]:md:text-3xl [&_h2]:font-semibold [&_h2]:mt-10 [&_h2]:mb-6 [&_h2]:leading-tight
+                    [&_h3]:text-xl [&_h3]:md:text-2xl [&_h3]:font-semibold [&_h3]:mt-8 [&_h3]:mb-4 [&_h3]:leading-snug
+                    [&_h4]:text-lg [&_h4]:md:text-xl [&_h4]:font-semibold [&_h4]:mt-6 [&_h4]:mb-3
+                    [&_h5]:text-base [&_h5]:font-semibold [&_h5]:mt-5 [&_h5]:mb-3
+                    [&_h6]:text-sm [&_h6]:font-semibold [&_h6]:mt-4 [&_h6]:mb-2
+                    [&_a]:text-sky-300 [&_a]:underline [&_a]:decoration-sky-400/70 [&_a]:underline-offset-4
+                    [&_a:hover]:text-sky-200 [&_a:hover]:decoration-2
+                    [&_a:visited]:text-violet-300 [&_a:visited]:decoration-violet-400/70
+                    [&_a:focus-visible]:rounded-sm [&_a:focus-visible]:outline-none [&_a:focus-visible]:ring-2 [&_a:focus-visible]:ring-sky-300 [&_a:focus-visible]:ring-offset-2 [&_a:focus-visible]:ring-offset-slate-950
+                    [&_ul]:list-disc [&_ul]:list-outside [&_ul]:pl-6 [&_ul>li]:my-2
+                    [&_ol]:list-decimal [&_ol]:list-outside [&_ol]:pl-6 [&_ol>li]:my-2
+                    [&_li>ul]:mt-2 [&_li>ol]:mt-2">
+                    <p>その昔 iYappo という検索サイトがありまして、メインの方は Rast を導入したり最終形態は MySQL + Senna で作っていたんですが、別口の方も C でまるっと書いて色々やってたことがあったんですね。</p><p>メインとは違う方の実験としても自前で検索エンジンを書いて<a href="https://web.archive.org/web/20040527031650/http://tech.yappo.jp/">一般公開</a>していたりしてたんですが、色々あって放置して<a href="http://github.com/yappo/yappod/">とりあえずGitHub</a>にだけ移してたという感じ。</p><p>今も当時の様子が現代に伝わる情報としては<a href="http://lc.linux.or.jp/lc2005/03.html">Linux Conference 2005</a>の<a href="https://web.archive.org/web/20060718045653/http://wiki.fdiary.net/kazuhiko/?lc2005-bof">全文検索BOF</a>で<a href="https://web.archive.org/web/20060908140209/http://tech.yappo.jp/docs/LinuxConference2005.pdf">発表した資料</a>などがあったりします。</p><h2 id="llm">LLM っていいですね</h2><p>ここ数年で LLM 使ったら大体なんでも作れるようになってきてる。そう、思いついて作れる！と思ったものは多分何でも作れる。
+LLM を使うのに必要なお金さえ払えたらあとは人間の時間と発想する能力さえあれば本当に何でも作れる。</p><p>そういった時代になったのが今です。いい時代ですね。</p><p>そんなこともあって20年以上前に作って放置してた検索エンジンを今風にブラッシュアップしてみることにしてみたのでした。</p><h2 id="yappod">Yappod とは</h2><p>Cで書かれた全文検索エンジンソフトウェアです。</p><p>特徴としては</p><ul><li>インデックスのメインストレージは BerkeleyDB を使ってる</li><li>よくある普通の N-Gram 検索</li><li>自ノードで保持してるインデックスを検索する yappod_core と、それらを集約してユーザ側のアプリとの BFF になる yappod_front がある</li><li>基本的にインデックスは全部作って入れ替える感じで更新処理はあんまり考えてない</li></ul><p>といった形のものでした。 yappod 単独の仕様はこんな感じですが、 Web サイトを自律的に収集する web crowler やページごとの関係値や iYappo 側のスコア情報などを加味したスコアリング処理などを別口でつけてたけど、公開されてるものには含めてないのでオーパーツ化しています。</p><h2 id="yappod2">Yappod2 を作ってる</h2><p>本題ですが、上記の22年以上前の検索エンジンですが令和の大AI時代に合わせて現代風の検索エンジンとしてリフォームしているのが<a href="https://github.com/yappo/yappod2">Yappod2</a>となっています。</p><p>特徴としては</p><ul><li>yappod_core, yappod_front の構成は維持</li><li>ストレージは独自形式を採用</li><li>ベクトル検索に対応<ul><li>通常のキーワード検索とベクトル検索を並列処理してスコアリングする</li></ul></li><li>RAG として LLM に渡すためのデータセットを返せる</li><li>インデックスのコンパクションツール追加</li><li><a href="https://github.com/yappo/yappod2/tree/main/docs">充実したドキュメント！</a></li><li><a href="https://github.com/yappo/yappod2/tree/main/examples">充実したリファレンス実装！</a><ul><li>local file からインデックスを生成します</li><li>Wikipedia data からインデックスを生成します</li><li>各種検索機能を試すための Web アプリを起動できます</li></ul></li></ul><p>などなどがあります。どうやら現在の設計だと yappod_front から使えるのが1個の yappod_core だけだったりと若干分散性能無くなったけど、それはおいおい。。</p><p>サンプルの Web 実装では、ベクトル検索やら文書で検索して検索結果として Google の AI モードのような AI が回答を出してくれる感じの UX を提供しています。回答生成の精度がなんか怪しいのでもうちょいチューニングしたいところ。</p><p>Wikipedia から1万件の戦国時代カテゴリのページのフル本文を収集して768次元のベクトルインデックスを作ったらだいたい1.7GBくらいのインデックスになります。</p><p><button type="button" class="pologen-image-thumb block" data-full-src="./index-du-full.png" data-alt="img.png">
+    <img src="./index-du-thumb.png" alt="img.png" loading="lazy" class="max-w-full h-auto rounded-xl shadow-md my-4"/>
+</button></p><h2 id="local-llm-yappod2">Local LLM でも Yappod2 の機能が試せます</h2><p>自分の場合だと MacBook Air M4 に 32GB メモリ積んでて LM Studio で Local LLM を試すことを良くやってるんですが、 EmbeddingGemma を入れて Yappod のインデックス用のベクトルを作ったり、キーワード検索で使うベクトルを作らせるなどやっても、だいぶ早くベクトル生成できてる感じです。</p><p>RAG を LLM に渡して回答を作らせるところは Gemma4-26B-A4B でやってるけど、推論は早いけど出力がまあ律速ですね。。
+LMX よりも GGUF のが早かった気がするけど LMX のチューニングちゃんとできてないせいかもしれない。。</p><p>一応使ってる時のデモ動画として以下のような感じです。 GUFF のが10秒くらいで回答生成できてたが。。(これはLMX)</p><video src="yappod2-demo.mov" controls playsinline preload="metadata" style="width: 100%; height: auto;">
+  [yappod2-demo.mov](yappod2-demo.mov)
+</video>
+<h2 id="heading-9b5f4f58925037e8">いまこんなことをする意味</h2><p>意味なんてないです。そこに作りかけだった素体と作ってくれるAIがいたからです。
+本運用停止して四半世紀近く経ったプロダクトなんで朽ち果てたまま放置されるのが常ですが</p><p>「いつかはいい感じにしたいなでも手で自分で作るのめんどいな労力かけてまで使うこともないな。。」と放置してたものが、AIによって誰でもいい感じに最新の動向踏まえた実装に置き換えられる、一定の技術的知識があればそれこそ無限大に思ったものが作り出せる現代はとても良いものですね。</p>
+                </div>
+            </article>
+            <aside class="lg:w-1/3 space-y-4">
+                <div class="card bg-slate-900/60 border border-slate-800">
+                    <div class="card-body">
+                        <div class="flex items-center gap-3">
+                            <img src="https://pbs.twimg.com/profile_images/1770102954382831616/H3LXaTgp_normal.jpg"
+                                 alt="Yappo"
+                                 class="h-10 w-10 rounded-full border border-slate-700"/>
+                            <div>
+                                <p class="text-sm text-slate-400">Author</p>
+                                <a href="https://x.com/yappo" class="text-white font-semibold hover:text-slate-200 transition">Yappo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                    <div class="card bg-slate-900/60 border border-slate-800">
+                        <div class="card-body">
+                            <h3 class="card-title text-white text-base">Table of contents</h3>
+                            <ul class="menu bg-transparent text-sm text-slate-300">
+                            
+                                
+                                    <li>
+                                        <a href="#llm" class="pologen-toc-link">LLM っていいですね</a>
+                                    </li>
+                                
+                            
+                                
+                                    <li>
+                                        <a href="#yappod" class="pologen-toc-link">Yappod とは</a>
+                                    </li>
+                                
+                            
+                                
+                                    <li>
+                                        <a href="#yappod2" class="pologen-toc-link">Yappod2 を作ってる</a>
+                                    </li>
+                                
+                            
+                                
+                                    <li>
+                                        <a href="#local-llm-yappod2" class="pologen-toc-link">Local LLM でも Yappod2 の機能が試せます</a>
+                                    </li>
+                                
+                            
+                                
+                                    <li>
+                                        <a href="#heading-9b5f4f58925037e8" class="pologen-toc-link">いまこんなことをする意味</a>
+                                    </li>
+                                
+                            
+                            </ul>
+                        </div>
+                    </div>
+                
+                <div class="card bg-slate-900/60 border border-slate-800">
+                    <div class="card-body">
+                        <h3 class="card-title text-white text-base">Recent posts</h3>
+                        <ul class="space-y-2 text-sm">
+                        
+                            <li>
+                                <a href="https://blog.yappo.jp/entry/2026/07/22/yappod/" class="block font-semibold text-white transition">
+                                    22年前に作ってた本番投入してた検索エンジン Yappod を大AI時代の今風に作り替えてる話
+                                </a>
+                                <p class="text-xs text-slate-500">Wed, 22 Jul 2026 11:39:10 JST</p>
+                            </li>
+                        
+                            <li>
+                                <a href="https://blog.yappo.jp/entry/2026/03/06/gpt-5.4-make-nanjj-thread/" class="block text-slate-300 hover:text-white transition">
+                                    【悲報】Open AI の GPT-5.4 が出た から なんJ のクソスレを創作してもらったらしんみり大作が出来てしまい全米が泣いた？
+                                </a>
+                                <p class="text-xs text-slate-500">Fri, 06 Mar 2026 20:04:20 JST</p>
+                            </li>
+                        
+                            <li>
+                                <a href="https://blog.yappo.jp/entry/2025/12/31/generate-headlessless-ogp-image/" class="block text-slate-300 hover:text-white transition">
+                                    生成AI時代のOGP画像生成にはHeadless Browserは不要説
+                                </a>
+                                <p class="text-xs text-slate-500">Wed, 31 Dec 2025 21:28:10 JST</p>
+                            </li>
+                        
+                            <li>
+                                <a href="https://blog.yappo.jp/entry/2025/11/24/update-structure/" class="block text-slate-300 hover:text-white transition">
+                                    設定ファイルやクラス構造を諸々変えたよ
+                                </a>
+                                <p class="text-xs text-slate-500">Mon, 24 Nov 2025 20:22:17 JST</p>
+                            </li>
+                        
+                            <li>
+                                <a href="https://blog.yappo.jp/entry/2025/11/19/pologen-side-menu/" class="block text-slate-300 hover:text-white transition">
+                                    ブログにサイドメニューを追加したよ！！
+                                </a>
+                                <p class="text-xs text-slate-500">Wed, 19 Nov 2025 06:25:45 JST</p>
+                            </li>
+                        
+                            <li>
+                                <a href="https://blog.yappo.jp/entry/2025/11/16/pologen-upgrade/" class="block text-slate-300 hover:text-white transition">
+                                    Pologen で Tailwind CSS &amp; daisy UI を使うようにしたよ！ Template Engine も変えたよ！！
+                                </a>
+                                <p class="text-xs text-slate-500">Mon, 17 Nov 2025 21:55:22 JST</p>
+                            </li>
+                        
+                            <li>
+                                <a href="https://blog.yappo.jp/entry/2025/02/25/implemented-configuration/" class="block text-slate-300 hover:text-white transition">
+                                    config.toml を実装したよ
+                                </a>
+                                <p class="text-xs text-slate-500">Tue, 25 Feb 2025 22:22:48 JST</p>
+                            </li>
+                        
+                            <li>
+                                <a href="https://blog.yappo.jp/entry/2025/02/14/kwebscraper/" class="block text-slate-300 hover:text-white transition">
+                                    KWebScraper - なんとなく Kotlin で Web::Scraper 実装してみた
+                                </a>
+                                <p class="text-xs text-slate-500">Fri, 14 Feb 2025 06:37:25 JST</p>
+                            </li>
+                        
+                            <li>
+                                <a href="https://blog.yappo.jp/entry/2025/01/29/metafile/" class="block text-slate-300 hover:text-white transition">
+                                    meta.toml を実装
+                                </a>
+                                <p class="text-xs text-slate-500">Wed, 29 Jan 2025 05:42:52 JST</p>
+                            </li>
+                        
+                            <li>
+                                <a href="https://blog.yappo.jp/entry/2025/01/27/support-index/" class="block text-slate-300 hover:text-white transition">
+                                    index.html と rss feed も生成できるようにした
+                                </a>
+                                <p class="text-xs text-slate-500">Mon, 27 Jan 2025 19:10:00 JST</p>
+                            </li>
+                        
+                        </ul>
+                    </div>
+                </div>
+                <div class="card bg-slate-900/60 border border-slate-800">
+                    <div class="card-body">
+                        <h3 class="card-title text-white text-base">Links</h3>
+                        <ul class="space-y-2 text-sm">
+                        
+                            <li>
+                                <a href="https://github.com/yappo" class="text-slate-300 hover:text-white transition" target="_blank" rel="noopener">GitHub</a>
+                            </li>
+                        
+                            <li>
+                                <a href="https://x.com/yappo" class="text-slate-300 hover:text-white transition" target="_blank" rel="noopener">X</a>
+                            </li>
+                        
+                            <li>
+                                <a href="https://github.com/yappo/Pologen" class="text-slate-300 hover:text-white transition" target="_blank" rel="noopener">Pologen</a>
+                            </li>
+                        
+                            <li>
+                                <a href="https://github.com/yappo/blog.yappo.jp" class="text-slate-300 hover:text-white transition" target="_blank" rel="noopener">Blog repository</a>
+                            </li>
+                        
+                        </ul>
+                    </div>
+                </div>
+                <div class="card bg-slate-900/60 border border-slate-800">
+                    <div class="card-body">
+                        <h3 class="card-title text-white text-base">RSS</h3>
+                        <a href="https://blog.yappo.jp/feed.xml" class="text-slate-300 hover:text-white transition text-sm">Subscribe</a>
+                    </div>
+                </div>
+                <div class="card bg-slate-900/60 border border-slate-800">
+                    <div class="card-body">
+                        <a
+                            href="https://x.com/intent/post?text=YappoLogs2+-+22%E5%B9%B4%E5%89%8D%E3%81%AB%E4%BD%9C%E3%81%A3%E3%81%A6%E3%81%9F%E6%9C%AC%E7%95%AA%E6%8A%95%E5%85%A5%E3%81%97%E3%81%A6%E3%81%9F%E6%A4%9C%E7%B4%A2%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%B3+Yappod+%E3%82%92%E5%A4%A7AI%E6%99%82%E4%BB%A3%E3%81%AE%E4%BB%8A%E9%A2%A8%E3%81%AB%E4%BD%9C%E3%82%8A%E6%9B%BF%E3%81%88%E3%81%A6%E3%82%8B%E8%A9%B1%20https%3A%2F%2Fblog.yappo.jp%2Fentry%2F2026%2F07%2F22%2Fyappod%2F"
+                            target="_blank"
+                            rel="noopener"
+                            class="inline-flex items-center justify-center gap-2 rounded-xl border border-slate-800 bg-black px-4 py-3 text-white text-xs font-semibold tracking-wide hover:bg-slate-900 transition focus-visible:outline focus-visible:outline-slate-300 w-full"
+                        >
+                            <svg viewBox="0 0 24 24" aria-hidden="true" class="h-4 w-4"><path fill="currentColor" d="M18.244 2h3.308l-7.227 8.26L22 22h-6.843l-4.56-6.11L5.406 22H2.095l7.73-8.836L2 2h6.99l4.117 5.572zm-1.16 17.94h1.833L7.084 3.973H5.117z"/></svg>
+                            Share on X
+                        </a>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+    <footer class="border-t border-slate-800 bg-slate-900/60">
+        <div class="mx-auto w-full max-w-6xl px-4 py-6 text-sm text-slate-400 flex items-center justify-between">
+            <span>© YappoLogs2</span>
+            <a href="https://x.com/yappo" class="hover:text-white transition">Yappo</a>
+        </div>
+    </footer>
+</div>
+<div
+  id="pologen-image-overlay"
+  class="hidden fixed inset-0 z-50 bg-black/80 items-center justify-center"
+>
+  <button
+    type="button"
+    id="pologen-image-overlay-close"
+    class="absolute top-4 right-4 text-white text-2xl"
+    aria-label="Close"
+  >
+    ×
+  </button>
+  <img
+    id="pologen-image-overlay-img"
+    src=""
+    alt=""
+    class="max-w-[90vw] max-h-[90vh] shadow-2xl"
+  />
+</div>
+</body>
+</html>
