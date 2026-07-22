@@ -1,6 +1,14 @@
 publishDate = "2025-01-27 19:10:00"
 updateDate = "2025-01-27 19:10:00"
-bodyMd5 = "c324d6c56fc2e44894194bd5ec2d5bf029f65a4408d130ccd524d83d529dd6c1"
+bodyMd5 = "529516c596cab6e55c7c72a4eab9a62b07080923a694238ea370e0166a1034f9"
 title = "index.html と rss feed も生成できるようにした"
-summary = "一旦エントリーページを生成してトップページとフィード購読もできるようになった風味。ちょっとコード雑すぎるから綺麗にせんとや。。。"
+summary = "一旦エントリーページを生成してトップページとフィード購読もできるようになった風味。 ちょっとコード雑すぎるから綺麗にせんとや。。。"
+indexSummary = "一旦エントリーページを生成してトップページとフィード購読もできるようになった風味。 ちょっとコード雑すぎるから綺麗にせんとや。。。"
+sourceSha256 = "3bf8d378e53ed6020f42287ed2752706235512d57ecee99bf26b0d98c25fcc63"
+renderConfigSha256 = "7813fea91651358b9e0fd172e083c221ecb3ce822e33e2eb297b31c725814f0d"
+navigationSha256 = "66172c4c63c443e2e05ca8dfe54343e688a74edc05868725f0440d513782b5b5"
+generatorVersion = 2
+tags = [ ]
+
+
 

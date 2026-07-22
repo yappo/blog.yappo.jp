@@ -1,8 +1,14 @@
 publishDate = "2025-12-31 21:28:10"
 updateDate = "2025-12-31 21:29:22"
-bodyMd5 = "d77ecc5ab6ee12e5516ba1aaa0fac4be4383fcd74d46eaeb9d9962f709760f5c"
+bodyMd5 = "b8a273a1196b142c66912a837b45cd99f0e65d36d006b10844af7251013aa4e6"
 title = "生成AI時代のOGP画像生成にはHeadless Browserは不要説"
-summary = "ここまでずっとBlog生成ツールの開発日誌ばっかだったけど、いい加減そろそろ普通のことでも描こうかと思って。TL;DRなんだかんだで作るのが大変なOGP画像生成の実装を生成AIにやらせたら案外良い感じ…"
+summary = "ここまでずっとBlog生成ツールの開発日誌ばっかだったけど、いい加減そろそろ普通のことでも描こうかと思って。 TL;DR なんだかんだで作るのが大変なOGP画像生成の実装を生成AIにやらせたら案外良い…"
+indexSummary = "ここまでずっとBlog生成ツールの開発日誌ばっかだったけど、いい加減そろそろ普通のことでも描こうかと思って。 TL;DR なんだかんだで作るのが大変なOGP画像生成の実装を生成AIにやらせたら案外良い感じに作れるかもね？と思いついて作ってみただけの日記。 OGP画像って作るのめん..."
+sourceSha256 = "168deb5b06d47a9f8f3a564ade89a041cabc2d6b42f3e603626949a0f3a62e2b"
+renderConfigSha256 = "7813fea91651358b9e0fd172e083c221ecb3ce822e33e2eb297b31c725814f0d"
+navigationSha256 = "66172c4c63c443e2e05ca8dfe54343e688a74edc05868725f0440d513782b5b5"
+generatorVersion = 2
+tags = [ ]
 
 [[toc]]
     level = 2
@@ -22,7 +28,7 @@ summary = "ここまでずっとBlog生成ツールの開発日誌ばっかだ�
 [[toc]]
     level = 2
     text = "自家用OGP画像生成エンジンを作ってみた"
-    id = "ogp"
+    id = "ogp-2"
 
 [[toc]]
     level = 2
@@ -48,3 +54,24 @@ summary = "ここまでずっとBlog生成ツールの開発日誌ばっかだ�
     level = 2
     text = "まとめ"
     id = "heading-7f7ad40ba94a2507"
+
+[[images]]
+    sourcePath = "codex-ogg-prompt-1.png"
+    sourceSha256 = "493c9ef526a61788fc5af21d13f8d17dc4eac4ae0d77274e0355b303db32b903"
+    fullPath = "codex-ogg-prompt-1-full.png"
+    thumbPath = "codex-ogg-prompt-1-thumb.png"
+    configSha256 = "e3fd0762443dc5abc74c092ddb962d39ef9bbf34eb10013df893378f7e93da00"
+
+[[images]]
+    sourcePath = "codex-ogp-prompt-2.png"
+    sourceSha256 = "1f6b9a189a1b3f2365ff5f8a9a50317a4af19d6b1087828ffc0f7bf7a54a18c0"
+    fullPath = "codex-ogp-prompt-2-full.png"
+    thumbPath = "codex-ogp-prompt-2-thumb.png"
+    configSha256 = "e3fd0762443dc5abc74c092ddb962d39ef9bbf34eb10013df893378f7e93da00"
+
+[[images]]
+    sourcePath = "ogp-hikaku.png"
+    sourceSha256 = "10ee1954a49ef4b0812f6f10b9d412422a9208d51fce31c457c1e9d7c67419a8"
+    fullPath = "ogp-hikaku-full.png"
+    thumbPath = "ogp-hikaku-thumb.png"
+    configSha256 = "e3fd0762443dc5abc74c092ddb962d39ef9bbf34eb10013df893378f7e93da00"

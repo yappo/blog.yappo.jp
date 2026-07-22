@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
@@ -20,8 +20,8 @@
     
     <meta name="twitter:image" content="https://blog.yappo.jp/entry/2025/01/26/reborn/ogp.png"/>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"/> 
-    <script src="https://cdn.tailwindcss.com"></script>     <script src="/entry/assets/pologen.js"></script> 
+    <link rel="stylesheet" href="/assets/pologen.css"/>     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"/> 
+    <script src="/assets/pologen.js"></script>     <script src="https://cdn.tailwindcss.com"></script>     <script src="/entry/assets/pologen.js"></script> 
 </head>
 <body class="bg-slate-950 text-slate-100 font-sans">
 <div class="min-h-screen flex flex-col">
@@ -32,10 +32,14 @@
                     YappoLogs2
                 </a>
             </div>
+            <nav class="flex items-center gap-4 text-sm">
+                
+                
+            </nav>
         </div>
     </header>
     <main class="flex-1">
-        <div class="mx-auto w-full max-w-6xl px-4 py-10 flex flex-col lg:flex-row gap-8">
+        <div data-testid="entry-layout" class="mx-auto w-full max-w-6xl px-4 py-10 flex flex-col lg:flex-row gap-8">
             <article class="lg:w-2/3 space-y-8">
                 <div class="space-y-2">
                     <p class="text-sm text-slate-400">Sun, 26 Jan 2025 23:00:00 JST</p>
@@ -46,6 +50,7 @@
                              class="h-8 w-8 rounded-full border border-slate-700"/>
                         <a href="https://x.com/yappo" class="hover:text-white transition">Yappo</a>
                     </div>
+                    
                 </div>
                 <div class="prose prose-invert max-w-none
                     [&_h2]:text-2xl [&_h2]:md:text-3xl [&_h2]:font-semibold [&_h2]:mt-10 [&_h2]:mb-6 [&_h2]:leading-tight
@@ -80,6 +85,7 @@ CMS 作ってない！ぎっはぶぺーじす設定しただけ。。</p><p>前
                         </div>
                     </div>
                 </div>
+                
                 
                 <div class="card bg-slate-900/60 border border-slate-800">
                     <div class="card-body">

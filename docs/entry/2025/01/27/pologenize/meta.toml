@@ -1,6 +1,14 @@
 publishDate = "2025-01-27 07:00:00"
 updateDate = "2025-01-27 07:00:00"
-bodyMd5 = "265450327d3be221ea6c7eafc09280976b1ebfab5f7197b1eac735a82a47fbbd"
+bodyMd5 = "64ddf9d6bf3fc6aef17ab2312242193d21dbc9339833a264f4982473992758a0"
 title = "とりあえずmd2blogかいた"
-summary = "IntelliJ AI Assistant さんに手伝ってもらって取り敢えずは markdown から HTML 作ってくれる君を作ったので安心。。テンプレートエンジン使いたいけど取り敢えず kotl…"
+summary = "IntelliJ AI Assistant さんに手伝ってもらって取り敢えずは markdown から HTML 作ってくれる君を作ったので安心。。 テンプレートエンジン使いたいけど取り敢えず kot…"
+indexSummary = "IntelliJ AI Assistant さんに手伝ってもらって取り敢えずは markdown から HTML 作ってくれる君を作ったので安心。。 テンプレートエンジン使いたいけど取り敢えず kotlinx で HTML 書いてます。 Markdown parser は変なのお..."
+sourceSha256 = "309d5176ce1dc255889fe12d2691fcf8cef6ec545778c8694ff02082230d76b7"
+renderConfigSha256 = "7813fea91651358b9e0fd172e083c221ecb3ce822e33e2eb297b31c725814f0d"
+navigationSha256 = "66172c4c63c443e2e05ca8dfe54343e688a74edc05868725f0440d513782b5b5"
+generatorVersion = 2
+tags = [ ]
+
+
 

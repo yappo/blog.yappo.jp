@@ -1,8 +1,14 @@
 publishDate = "2025-11-19 06:25:45"
 updateDate = "2025-11-24 20:05:34"
-bodyMd5 = "f03a600c05cec8eb52ea8ebf3d83b507b1f94b136d84d7f921961552292c5579"
+bodyMd5 = "cae4074371c77c838d79ed1c12a9f9624c505c11c6766f1eab847dd15db6ab32"
 title = "ブログにサイドメニューを追加したよ！！"
-summary = "CSS Frameworkも取り入れてちょっとは見やすくなったのでいい気になってサイドメニューも追加してみたのでした。あとOGP画像も対応です。追加機能OGP Imageモダンな記事サイトだとSNS …"
+summary = "CSS Frameworkも取り入れてちょっとは見やすくなったのでいい気になってサイドメニューも追加してみたのでした。 あとOGP画像も対応です。 追加機能 OGP Image モダンな記事サイトだと…"
+indexSummary = "CSS Frameworkも取り入れてちょっとは見やすくなったのでいい気になってサイドメニューも追加してみたのでした。 あとOGP画像も対応です。 追加機能 OGP Image モダンな記事サイトだとSNS に投稿すると記事タイトルとか内容を一枚の画像にして共有してくれるあれある..."
+sourceSha256 = "c6917694a48384edc54f1e4b557b40761861d0eb3df61a98bb642a5a33cd8eb5"
+renderConfigSha256 = "7813fea91651358b9e0fd172e083c221ecb3ce822e33e2eb297b31c725814f0d"
+navigationSha256 = "66172c4c63c443e2e05ca8dfe54343e688a74edc05868725f0440d513782b5b5"
+generatorVersion = 2
+tags = [ ]
 
 [[toc]]
     level = 2
@@ -38,3 +44,17 @@ summary = "CSS Frameworkも取り入れてちょっとは見やすくなった�
     level = 2
     text = "さいごに"
     id = "heading-c232389427056805"
+
+[[images]]
+    sourcePath = "ogp-hikaku.png"
+    sourceSha256 = "10ee1954a49ef4b0812f6f10b9d412422a9208d51fce31c457c1e9d7c67419a8"
+    fullPath = "ogp-hikaku-full.png"
+    thumbPath = "ogp-hikaku-thumb.png"
+    configSha256 = "e3fd0762443dc5abc74c092ddb962d39ef9bbf34eb10013df893378f7e93da00"
+
+[[images]]
+    sourcePath = "toc-card.png"
+    sourceSha256 = "669652c6c494a6453712d921d3b1096c806e93b5df936d7788ca15862e6249e4"
+    fullPath = "toc-card-full.png"
+    thumbPath = "toc-card-thumb.png"
+    configSha256 = "e3fd0762443dc5abc74c092ddb962d39ef9bbf34eb10013df893378f7e93da00"

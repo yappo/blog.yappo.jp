@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <title>YappoLogs2</title>
     <meta name="description" content="Yappoのブログだよ"/>
     <link rel="icon" href="/favicon.png"/>
@@ -9,8 +10,8 @@
           type="application/rss+xml"
           title="RSS Feed"
           href="https://blog.yappo.jp/feed.xml"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"/> 
-    <script src="https://cdn.tailwindcss.com"></script>     <script src="/entry/assets/pologen.js"></script> 
+    <link rel="stylesheet" href="/assets/pologen.css"/>     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"/> 
+    <script src="/assets/pologen.js"></script>     <script src="https://cdn.tailwindcss.com"></script>     <script src="/entry/assets/pologen.js"></script> 
 </head>
 <body class="bg-slate-950 text-slate-100 font-sans text-base leading-relaxed sm:text-lg">
 <div class="min-h-screen flex flex-col">
@@ -19,9 +20,11 @@
             <a href="https://blog.yappo.jp/" class="text-2xl sm:text-3xl font-semibold tracking-tight hover:text-white transition text-center sm:text-left">
                 YappoLogs2
             </a>
-            <a href="https://blog.yappo.jp/feed.xml" class="text-sm text-slate-300 hover:text-white transition text-center sm:text-right">
-                RSS Feed
-            </a>
+            <div class="flex items-center justify-center sm:justify-end gap-4 text-sm">
+                
+                
+                <a href="https://blog.yappo.jp/feed.xml" class="text-slate-300 hover:text-white transition">RSS Feed</a>
+            </div>
         </div>
     </header>
     <main class="flex-1">
@@ -31,78 +34,75 @@
                     <a href="https://blog.yappo.jp/entry/2026/07/22/yappod/" class="rounded-2xl border border-slate-800 bg-slate-900/40 p-5 sm:p-6 shadow-lg shadow-slate-900/40 flex flex-col gap-3 hover:border-slate-600 hover:bg-slate-900 transition focus-visible:ring focus-visible:ring-slate-700 focus-visible:outline-none w-full">
                         <p class="text-xs uppercase tracking-wide text-slate-400">Wed, 22 Jul 2026 11:39:10 JST</p>
                         <h2 class="text-xl sm:text-2xl font-semibold text-white leading-snug">22年前に作ってた本番投入してた検索エンジン Yappod を大AI時代の今風に作り替えてる話</h2>
-                        <p class="text-sm sm:text-base text-slate-300">その昔 iYappo という検索サイトがありまして、メインの方は Rast を導入したり最終形態は MySQL + Senna で作っていたんですが、別口の方も C でまるっと書いて色々やってたことがあったんですね。メインとは違う方の実験としても自前で検索エンジンを書いて一般公開...</p>
+                        <p class="text-sm sm:text-base text-slate-300">その昔 iYappo という検索サイトがありまして、メインの方は Rast を導入したり最終形態は MySQL + Senna で作っていたんですが、別口の方も C でまるっと書いて色々やってたことがあったんですね。 メインとは違う方の実験としても自前で検索エンジンを書いて一般公...</p>
                     </a>
                 
                     <a href="https://blog.yappo.jp/entry/2026/03/06/gpt-5.4-make-nanjj-thread/" class="rounded-2xl border border-slate-800 bg-slate-900/40 p-5 sm:p-6 shadow-lg shadow-slate-900/40 flex flex-col gap-3 hover:border-slate-600 hover:bg-slate-900 transition focus-visible:ring focus-visible:ring-slate-700 focus-visible:outline-none w-full">
                         <p class="text-xs uppercase tracking-wide text-slate-400">Fri, 06 Mar 2026 20:04:20 JST</p>
                         <h2 class="text-xl sm:text-2xl font-semibold text-white leading-snug">【悲報】Open AI の GPT-5.4 が出た から なんJ のクソスレを創作してもらったらしんみり大作が出来てしまい全米が泣いた？</h2>
-                        <p class="text-sm sm:text-base text-slate-300">以下のポストを見かけて「ほなワイも作ってもらおか」と思ってもらったら思いもよらぬものができたのでシェア。。GPT5.4による人類最後の日のなんJスレ pic.twitter.com/Z7V0KJvtlf&amp;mdash; さいぴ🐣 (saip) (@_saip_) March 5,...</p>
+                        <p class="text-sm sm:text-base text-slate-300">以下のポストを見かけて「ほなワイも作ってもらおか」と思ってもらったら思いもよらぬものができたのでシェア。。 GPT5.4による人類最後の日のなんJスレ pic.twitter.com/Z7V0KJvtlf — さいぴ🐣 (saip) (@_saip_) March 5, 202...</p>
                     </a>
                 
                     <a href="https://blog.yappo.jp/entry/2025/12/31/generate-headlessless-ogp-image/" class="rounded-2xl border border-slate-800 bg-slate-900/40 p-5 sm:p-6 shadow-lg shadow-slate-900/40 flex flex-col gap-3 hover:border-slate-600 hover:bg-slate-900 transition focus-visible:ring focus-visible:ring-slate-700 focus-visible:outline-none w-full">
                         <p class="text-xs uppercase tracking-wide text-slate-400">Wed, 31 Dec 2025 21:28:10 JST</p>
                         <h2 class="text-xl sm:text-2xl font-semibold text-white leading-snug">生成AI時代のOGP画像生成にはHeadless Browserは不要説</h2>
-                        <p class="text-sm sm:text-base text-slate-300">ここまでずっとBlog生成ツールの開発日誌ばっかだったけど、いい加減そろそろ普通のことでも描こうかと思って。TL;DRなんだかんだで作るのが大変なOGP画像生成の実装を生成AIにやらせたら案外良い感じに作れるかもね？と思いついて作ってみただけの日記。OGP画像って作るのめんどいよ...</p>
+                        <p class="text-sm sm:text-base text-slate-300">ここまでずっとBlog生成ツールの開発日誌ばっかだったけど、いい加減そろそろ普通のことでも描こうかと思って。 TL;DR なんだかんだで作るのが大変なOGP画像生成の実装を生成AIにやらせたら案外良い感じに作れるかもね？と思いついて作ってみただけの日記。 OGP画像って作るのめん...</p>
                     </a>
                 
                     <a href="https://blog.yappo.jp/entry/2025/11/24/update-structure/" class="rounded-2xl border border-slate-800 bg-slate-900/40 p-5 sm:p-6 shadow-lg shadow-slate-900/40 flex flex-col gap-3 hover:border-slate-600 hover:bg-slate-900 transition focus-visible:ring focus-visible:ring-slate-700 focus-visible:outline-none w-full">
                         <p class="text-xs uppercase tracking-wide text-slate-400">Mon, 24 Nov 2025 20:22:17 JST</p>
                         <h2 class="text-xl sm:text-2xl font-semibold text-white leading-snug">設定ファイルやクラス構造を諸々変えたよ</h2>
-                        <p class="text-sm sm:text-base text-slate-300">meta.tomlの読み込みがおかしいなと思ったらktomlをだいぶ古いの使ってたので0.7.1にアップデート。そして config.toml がだいぶ雑だったので構造化したのであった。。あとは、コード全体も Main.kt に固まりがちだったので DDD に倣って構成をガラッと...</p>
+                        <p class="text-sm sm:text-base text-slate-300">meta.tomlの読み込みがおかしいなと思ったらktomlをだいぶ古いの使ってたので0.7.1にアップデート。 そして config.toml がだいぶ雑だったので構造化したのであった。。 あとは、コード全体も Main.kt に固まりがちだったので DDD に倣って構成をガラ...</p>
                     </a>
                 
                     <a href="https://blog.yappo.jp/entry/2025/11/19/pologen-side-menu/" class="rounded-2xl border border-slate-800 bg-slate-900/40 p-5 sm:p-6 shadow-lg shadow-slate-900/40 flex flex-col gap-3 hover:border-slate-600 hover:bg-slate-900 transition focus-visible:ring focus-visible:ring-slate-700 focus-visible:outline-none w-full">
                         <p class="text-xs uppercase tracking-wide text-slate-400">Wed, 19 Nov 2025 06:25:45 JST</p>
                         <h2 class="text-xl sm:text-2xl font-semibold text-white leading-snug">ブログにサイドメニューを追加したよ！！</h2>
-                        <p class="text-sm sm:text-base text-slate-300">CSS Frameworkも取り入れてちょっとは見やすくなったのでいい気になってサイドメニューも追加してみたのでした。あとOGP画像も対応です。追加機能OGP Imageモダンな記事サイトだとSNS に投稿すると記事タイトルとか内容を一枚の画像にして共有してくれるあれあるじゃ無い...</p>
+                        <p class="text-sm sm:text-base text-slate-300">CSS Frameworkも取り入れてちょっとは見やすくなったのでいい気になってサイドメニューも追加してみたのでした。 あとOGP画像も対応です。 追加機能 OGP Image モダンな記事サイトだとSNS に投稿すると記事タイトルとか内容を一枚の画像にして共有してくれるあれある...</p>
                     </a>
                 
                     <a href="https://blog.yappo.jp/entry/2025/11/16/pologen-upgrade/" class="rounded-2xl border border-slate-800 bg-slate-900/40 p-5 sm:p-6 shadow-lg shadow-slate-900/40 flex flex-col gap-3 hover:border-slate-600 hover:bg-slate-900 transition focus-visible:ring focus-visible:ring-slate-700 focus-visible:outline-none w-full">
                         <p class="text-xs uppercase tracking-wide text-slate-400">Mon, 17 Nov 2025 21:55:22 JST</p>
                         <h2 class="text-xl sm:text-2xl font-semibold text-white leading-snug">Pologen で Tailwind CSS &amp; daisy UI を使うようにしたよ！ Template Engine も変えたよ！！</h2>
-                        <p class="text-sm sm:text-base text-slate-300">JJUG CCC 2025 Fall に行って意識が高まってたので Pologen を色々と更新してたのでした。大きな課題としてはHTML Template を別ファイルにしたかったRSS Feed もちゃんとしたかったサイト情報とか著者情報がハードコーディングされすぎてて設定可...</p>
+                        <p class="text-sm sm:text-base text-slate-300">JJUG CCC 2025 Fall に行って意識が高まってたので Pologen を色々と更新してたのでした。 大きな課題としては HTML Template を別ファイルにしたかった RSS Feed もちゃんとしたかった サイト情報とか著者情報がハードコーディングされすぎて...</p>
                     </a>
                 
                     <a href="https://blog.yappo.jp/entry/2025/02/25/implemented-configuration/" class="rounded-2xl border border-slate-800 bg-slate-900/40 p-5 sm:p-6 shadow-lg shadow-slate-900/40 flex flex-col gap-3 hover:border-slate-600 hover:bg-slate-900 transition focus-visible:ring focus-visible:ring-slate-700 focus-visible:outline-none w-full">
                         <p class="text-xs uppercase tracking-wide text-slate-400">Tue, 25 Feb 2025 22:22:48 JST</p>
                         <h2 class="text-xl sm:text-2xl font-semibold text-white leading-snug">config.toml を実装したよ</h2>
-                        <p class="text-sm sm:text-base text-slate-300">各種ファイルパスをコードに書いてたのを外に出そうと思って早一ヶ月、ようやく実装した。documentRootPath = &amp;quot;docs/entry&amp;quot;
-blogTopUrl = &amp;quot;https://blog.yappo.jp/&amp;quot;
-document...</p>
+                        <p class="text-sm sm:text-base text-slate-300">各種ファイルパスをコードに書いてたのを外に出そうと思って早一ヶ月、ようやく実装した。 documentRootPath = "docs/entry"
+blogTopUrl = "https://blog.yappo.jp/"
+documentBaseUrl = "https://...</p>
                     </a>
                 
                     <a href="https://blog.yappo.jp/entry/2025/02/14/kwebscraper/" class="rounded-2xl border border-slate-800 bg-slate-900/40 p-5 sm:p-6 shadow-lg shadow-slate-900/40 flex flex-col gap-3 hover:border-slate-600 hover:bg-slate-900 transition focus-visible:ring focus-visible:ring-slate-700 focus-visible:outline-none w-full">
                         <p class="text-xs uppercase tracking-wide text-slate-400">Fri, 14 Feb 2025 06:37:25 JST</p>
                         <h2 class="text-xl sm:text-2xl font-semibold text-white leading-snug">KWebScraper - なんとなく Kotlin で Web::Scraper 実装してみた</h2>
-                        <p class="text-sm sm:text-base text-slate-300">ふと Kotlin で DSL を実装してみたくなって、なんか題材ないかなと思ったら Web::Scraper が丁度良さそうな粒度だったので作ってみた。Perl だと同じ関数名でスコープごとに役割を変えていくって奴は local を使ってレキシカルスコープに絞ってコードリファレ...</p>
+                        <p class="text-sm sm:text-base text-slate-300">ふと Kotlin で DSL を実装してみたくなって、なんか題材ないかなと思ったら Web::Scraper が丁度良さそうな粒度だったので作ってみた。 Perl だと同じ関数名でスコープごとに役割を変えていくって奴は local を使ってレキシカルスコープに絞ってコードリファ...</p>
                     </a>
                 
                     <a href="https://blog.yappo.jp/entry/2025/01/29/metafile/" class="rounded-2xl border border-slate-800 bg-slate-900/40 p-5 sm:p-6 shadow-lg shadow-slate-900/40 flex flex-col gap-3 hover:border-slate-600 hover:bg-slate-900 transition focus-visible:ring focus-visible:ring-slate-700 focus-visible:outline-none w-full">
                         <p class="text-xs uppercase tracking-wide text-slate-400">Wed, 29 Jan 2025 05:42:52 JST</p>
                         <h2 class="text-xl sm:text-2xl font-semibold text-white leading-snug">meta.toml を実装</h2>
-                        <p class="text-sm sm:text-base text-slate-300">index.md ファイルに更新日時とかを書くダルダル運用だったけど、新しく index.md を追加したことを検知して publish date を自動で付与するようにした。
-ついでに update date も検知して更新できるようにしといた。これで更新あれば HTML 生成...</p>
+                        <p class="text-sm sm:text-base text-slate-300">index.md ファイルに更新日時とかを書くダルダル運用だったけど、新しく index.md を追加したことを検知して publish date を自動で付与するようにした。 ついでに update date も検知して更新できるようにしといた。これで更新あれば HTML 生成...</p>
                     </a>
                 
                     <a href="https://blog.yappo.jp/entry/2025/01/27/support-index/" class="rounded-2xl border border-slate-800 bg-slate-900/40 p-5 sm:p-6 shadow-lg shadow-slate-900/40 flex flex-col gap-3 hover:border-slate-600 hover:bg-slate-900 transition focus-visible:ring focus-visible:ring-slate-700 focus-visible:outline-none w-full">
                         <p class="text-xs uppercase tracking-wide text-slate-400">Mon, 27 Jan 2025 19:10:00 JST</p>
                         <h2 class="text-xl sm:text-2xl font-semibold text-white leading-snug">index.html と rss feed も生成できるようにした</h2>
-                        <p class="text-sm sm:text-base text-slate-300">一旦エントリーページを生成してトップページとフィード購読もできるようになった風味。ちょっとコード雑すぎるから綺麗にせんとや。。。</p>
+                        <p class="text-sm sm:text-base text-slate-300">一旦エントリーページを生成してトップページとフィード購読もできるようになった風味。 ちょっとコード雑すぎるから綺麗にせんとや。。。</p>
                     </a>
                 
                     <a href="https://blog.yappo.jp/entry/2025/01/27/pologenize/" class="rounded-2xl border border-slate-800 bg-slate-900/40 p-5 sm:p-6 shadow-lg shadow-slate-900/40 flex flex-col gap-3 hover:border-slate-600 hover:bg-slate-900 transition focus-visible:ring focus-visible:ring-slate-700 focus-visible:outline-none w-full">
                         <p class="text-xs uppercase tracking-wide text-slate-400">Mon, 27 Jan 2025 07:00:00 JST</p>
                         <h2 class="text-xl sm:text-2xl font-semibold text-white leading-snug">とりあえずmd2blogかいた</h2>
-                        <p class="text-sm sm:text-base text-slate-300">IntelliJ AI Assistant さんに手伝ってもらって取り敢えずは markdown から HTML 作ってくれる君を作ったので安心。。テンプレートエンジン使いたいけど取り敢えず kotlinx で HTML 書いてます。 Markdown parser は変なのおす...</p>
+                        <p class="text-sm sm:text-base text-slate-300">IntelliJ AI Assistant さんに手伝ってもらって取り敢えずは markdown から HTML 作ってくれる君を作ったので安心。。 テンプレートエンジン使いたいけど取り敢えず kotlinx で HTML 書いてます。 Markdown parser は変なのお...</p>
                     </a>
                 
                     <a href="https://blog.yappo.jp/entry/2025/01/26/reborn/" class="rounded-2xl border border-slate-800 bg-slate-900/40 p-5 sm:p-6 shadow-lg shadow-slate-900/40 flex flex-col gap-3 hover:border-slate-600 hover:bg-slate-900 transition focus-visible:ring focus-visible:ring-slate-700 focus-visible:outline-none w-full">
                         <p class="text-xs uppercase tracking-wide text-slate-400">Sun, 26 Jan 2025 23:00:00 JST</p>
                         <h2 class="text-xl sm:text-2xl font-semibold text-white leading-snug">そろそろ再開します〜</h2>
-                        <p class="text-sm sm:text-base text-slate-300">前のサーバがめっちゃクラッシュしてずっと放置しすぎてたけど、そろぼち再開しようということでここに再開します。
-note とか色々あるんだけど、やっぱエンジニアなら自前で CMS 作るよねー普通は。ということで作るところから始めよう。。。
-まだコード書いてすらいないので stati...</p>
+                        <p class="text-sm sm:text-base text-slate-300">前のサーバがめっちゃクラッシュしてずっと放置しすぎてたけど、そろぼち再開しようということでここに再開します。 note とか色々あるんだけど、やっぱエンジニアなら自前で CMS 作るよねー普通は。ということで作るところから始めよう。。。 まだコード書いてすらいないので stati...</p>
                     </a>
                 
             </div>

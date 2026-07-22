@@ -1,6 +1,48 @@
 publishDate = "2025-11-17 21:55:22"
 updateDate = "2025-11-24 20:05:34"
-bodyMd5 = "396556011b1ad4a045c21d70bcacfe17faa7f0467f913841a9e764790407c2f6"
+bodyMd5 = "6c0a805cf8e61bfad36c2a017416a945b2712ac64ad81a2a38540ca8c2d388d1"
 title = "Pologen で Tailwind CSS & daisy UI を使うようにしたよ！ Template Engine も変えたよ！！"
-summary = "JJUG CCC 2025 Fall に行って意識が高まってたので Pologen を色々と更新してたのでした。大きな課題としてはHTML Template を別ファイルにしたかったRSS Feed …"
+summary = "JJUG CCC 2025 Fall に行って意識が高まってたので Pologen を色々と更新してたのでした。 大きな課題としては HTML Template を別ファイルにしたかった RSS Fe…"
+indexSummary = "JJUG CCC 2025 Fall に行って意識が高まってたので Pologen を色々と更新してたのでした。 大きな課題としては HTML Template を別ファイルにしたかった RSS Feed もちゃんとしたかった サイト情報とか著者情報がハードコーディングされすぎて..."
+sourceSha256 = "f474c084343f18c2ba5dd645d14972c1acb5bd679d3d7c37c7280bec74dbbaa7"
+renderConfigSha256 = "7813fea91651358b9e0fd172e083c221ecb3ce822e33e2eb297b31c725814f0d"
+navigationSha256 = "66172c4c63c443e2e05ca8dfe54343e688a74edc05868725f0440d513782b5b5"
+generatorVersion = 2
+tags = [ ]
 
+
+
+[[images]]
+    sourcePath = "chatgpt.png"
+    sourceSha256 = "833e35c767f230074efc2f59ff267d9f5b82dfdae4886bbcd4bcac3209e34853"
+    fullPath = "chatgpt-full.png"
+    thumbPath = "chatgpt-thumb.png"
+    configSha256 = "e3fd0762443dc5abc74c092ddb962d39ef9bbf34eb10013df893378f7e93da00"
+
+[[images]]
+    sourcePath = "chatgpt-prompt.png"
+    sourceSha256 = "e8b1882722a17699b0e189cc79258662bc76680812aad43cf2da0242cf5049d0"
+    fullPath = "chatgpt-prompt-full.png"
+    thumbPath = "chatgpt-prompt-thumb.png"
+    configSha256 = "e3fd0762443dc5abc74c092ddb962d39ef9bbf34eb10013df893378f7e93da00"
+
+[[images]]
+    sourcePath = "codex.png"
+    sourceSha256 = "e087900f7f8e334075f173764cf0b44fb30b1462a0e37c9d1b7257cbd0ad2a55"
+    fullPath = "codex-full.png"
+    thumbPath = "codex-thumb.png"
+    configSha256 = "e3fd0762443dc5abc74c092ddb962d39ef9bbf34eb10013df893378f7e93da00"
+
+[[images]]
+    sourcePath = "intellij.png"
+    sourceSha256 = "fcc722875ac70a6ff5db481dfe5ca4d6d147775e9f60c86845257cabfe42d3e7"
+    fullPath = "intellij-full.png"
+    thumbPath = "intellij-thumb.png"
+    configSha256 = "e3fd0762443dc5abc74c092ddb962d39ef9bbf34eb10013df893378f7e93da00"
+
+[[images]]
+    sourcePath = "intellij-suggest.png"
+    sourceSha256 = "354cc6e78cc5f74fa6fa11fba2213cf56679ddfd90a1e99a40edcebdbc7b0795"
+    fullPath = "intellij-suggest-full.png"
+    thumbPath = "intellij-suggest-thumb.png"
+    configSha256 = "e3fd0762443dc5abc74c092ddb962d39ef9bbf34eb10013df893378f7e93da00"

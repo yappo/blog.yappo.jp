@@ -1,8 +1,14 @@
 publishDate = "2026-03-06 20:04:20"
 updateDate = "2026-03-06 21:07:21"
-bodyMd5 = "68d357b837f895ee8cbc1e8e23f57e54e524557a55cf4124ff75fc8177dd9eb1"
+bodyMd5 = "eca57014c9842cfbf1c19066424358a199c90e06187ec24e294ba5715d93abb2"
 title = "【悲報】Open AI の GPT-5.4 が出た から なんJ のクソスレを創作してもらったらしんみり大作が出来てしまい全米が泣いた？"
-summary = "以下のポストを見かけて「ほなワイも作ってもらおか」と思ってもらったら思いもよらぬものができたのでシェア。。GPT5.4による人類最後の日のなんJスレ pic.twitter.com/Z7V0KJvtl…"
+summary = "以下のポストを見かけて「ほなワイも作ってもらおか」と思ってもらったら思いもよらぬものができたのでシェア。。 GPT5.4による人類最後の日のなんJスレ pic.twitter.com/Z7V0KJvt…"
+indexSummary = "以下のポストを見かけて「ほなワイも作ってもらおか」と思ってもらったら思いもよらぬものができたのでシェア。。 GPT5.4による人類最後の日のなんJスレ pic.twitter.com/Z7V0KJvtlf — さいぴ🐣 (saip) (@_saip_) March 5, 202..."
+sourceSha256 = "1d2277988296385cb6fa1c500b73e96dc5f94435dcdb412b9e89e9dd9fb09252"
+renderConfigSha256 = "7813fea91651358b9e0fd172e083c221ecb3ce822e33e2eb297b31c725814f0d"
+navigationSha256 = "66172c4c63c443e2e05ca8dfe54343e688a74edc05868725f0440d513782b5b5"
+generatorVersion = 2
+tags = [ ]
 
 [[toc]]
     level = 2
@@ -38,3 +44,45 @@ summary = "以下のポストを見かけて「ほなワイも作ってもらお
     level = 2
     text = "【悲報】人類滅亡から100年、あの世も普通に過疎る"
     id = "100"
+
+[[images]]
+    sourcePath = "img.png"
+    sourceSha256 = "1a15cce7004291100dc232617153e24d13837333e4c25b5e86e108315b98198e"
+    fullPath = "img-full.png"
+    thumbPath = "img-thumb.png"
+    configSha256 = "e3fd0762443dc5abc74c092ddb962d39ef9bbf34eb10013df893378f7e93da00"
+
+[[images]]
+    sourcePath = "img_1.png"
+    sourceSha256 = "aa48527419598a5c114df1570173e9f724721d51bc6e8677aad224015f1a07fa"
+    fullPath = "img_1-full.png"
+    thumbPath = "img_1-thumb.png"
+    configSha256 = "e3fd0762443dc5abc74c092ddb962d39ef9bbf34eb10013df893378f7e93da00"
+
+[[images]]
+    sourcePath = "img_2.png"
+    sourceSha256 = "ed0d520fcb63b2a6f52201c2ed92f71bb193bb91fcdd7b00dde15f0ed22b62c2"
+    fullPath = "img_2-full.png"
+    thumbPath = "img_2-thumb.png"
+    configSha256 = "e3fd0762443dc5abc74c092ddb962d39ef9bbf34eb10013df893378f7e93da00"
+
+[[images]]
+    sourcePath = "img_4.png"
+    sourceSha256 = "9d35832209eb455ceaa28e0560aa6d4b7201cce3892d1900bb4b25fe6f5bc74f"
+    fullPath = "img_4-full.png"
+    thumbPath = "img_4-thumb.png"
+    configSha256 = "e3fd0762443dc5abc74c092ddb962d39ef9bbf34eb10013df893378f7e93da00"
+
+[[images]]
+    sourcePath = "img_3.png"
+    sourceSha256 = "d5c40dfeec81a746e9c1f2aba86789c2d26dda4e17898c58b089748ac4ad54be"
+    fullPath = "img_3-full.png"
+    thumbPath = "img_3-thumb.png"
+    configSha256 = "e3fd0762443dc5abc74c092ddb962d39ef9bbf34eb10013df893378f7e93da00"
+
+[[images]]
+    sourcePath = "img_5.png"
+    sourceSha256 = "e7ab7cd40eee7dc137c3f921e28d625307dd4d4636f9491421fd3d3d50525e9c"
+    fullPath = "img_5-full.png"
+    thumbPath = "img_5-thumb.png"
+    configSha256 = "e3fd0762443dc5abc74c092ddb962d39ef9bbf34eb10013df893378f7e93da00"

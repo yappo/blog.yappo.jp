@@ -6,14 +6,16 @@
         <atom:link href="https://blog.yappo.jp/feed.xml" rel="self" type="application/rss+xml"/>
         <description>Yappoのブログだよ</description>
         <language>ja</language>
-        <pubDate>Wed, 22 Jul 2026 02:39:10 GMT</pubDate>
+        
+            <pubDate>Wed, 22 Jul 2026 02:39:10 GMT</pubDate>
+        
         
             <item>
                 <title>22年前に作ってた本番投入してた検索エンジン Yappod を大AI時代の今風に作り替えてる話</title>
                 <link>https://blog.yappo.jp/entry/2026/07/22/yappod/</link>
                 <description/>
                 <content:encoded>
-その昔 iYappo という検索サイトがありまして、メインの方は Rast を導入したり最終形態は MySQL + Senna で作っていたんですが、別口の方も C でまるっと書いて色々やってたことがあったんですね。メインとは違う方の実験としても自前で検索エンジンを書いて一般公開...
+その昔 iYappo という検索サイトがありまして、メインの方は Rast を導入したり最終形態は MySQL + Senna で作っていたんですが、別口の方も C でまるっと書いて色々やってたことがあったんですね。 メインとは違う方の実験としても自前で検索エンジンを書いて一般公...
                 </content:encoded>
                 <pubDate>Wed, 22 Jul 2026 02:39:10 GMT</pubDate>
                 <guid>https://blog.yappo.jp/entry/2026/07/22/yappod/</guid>
@@ -24,7 +26,7 @@
                 <link>https://blog.yappo.jp/entry/2026/03/06/gpt-5.4-make-nanjj-thread/</link>
                 <description/>
                 <content:encoded>
-以下のポストを見かけて「ほなワイも作ってもらおか」と思ってもらったら思いもよらぬものができたのでシェア。。GPT5.4による人類最後の日のなんJスレ pic.twitter.com/Z7V0KJvtlf&amp;mdash; さいぴ🐣 (saip) (@_saip_) March 5,...
+以下のポストを見かけて「ほなワイも作ってもらおか」と思ってもらったら思いもよらぬものができたのでシェア。。 GPT5.4による人類最後の日のなんJスレ pic.twitter.com/Z7V0KJvtlf — さいぴ🐣 (saip) (@_saip_) March 5, 202...
                 </content:encoded>
                 <pubDate>Fri, 06 Mar 2026 11:04:20 GMT</pubDate>
                 <guid>https://blog.yappo.jp/entry/2026/03/06/gpt-5.4-make-nanjj-thread/</guid>
@@ -35,7 +37,7 @@
                 <link>https://blog.yappo.jp/entry/2025/12/31/generate-headlessless-ogp-image/</link>
                 <description/>
                 <content:encoded>
-ここまでずっとBlog生成ツールの開発日誌ばっかだったけど、いい加減そろそろ普通のことでも描こうかと思って。TL;DRなんだかんだで作るのが大変なOGP画像生成の実装を生成AIにやらせたら案外良い感じに作れるかもね？と思いついて作ってみただけの日記。OGP画像って作るのめんどいよ...
+ここまでずっとBlog生成ツールの開発日誌ばっかだったけど、いい加減そろそろ普通のことでも描こうかと思って。 TL;DR なんだかんだで作るのが大変なOGP画像生成の実装を生成AIにやらせたら案外良い感じに作れるかもね？と思いついて作ってみただけの日記。 OGP画像って作るのめん...
                 </content:encoded>
                 <pubDate>Wed, 31 Dec 2025 12:28:10 GMT</pubDate>
                 <guid>https://blog.yappo.jp/entry/2025/12/31/generate-headlessless-ogp-image/</guid>
@@ -46,7 +48,7 @@
                 <link>https://blog.yappo.jp/entry/2025/11/24/update-structure/</link>
                 <description/>
                 <content:encoded>
-meta.tomlの読み込みがおかしいなと思ったらktomlをだいぶ古いの使ってたので0.7.1にアップデート。そして config.toml がだいぶ雑だったので構造化したのであった。。あとは、コード全体も Main.kt に固まりがちだったので DDD に倣って構成をガラッと...
+meta.tomlの読み込みがおかしいなと思ったらktomlをだいぶ古いの使ってたので0.7.1にアップデート。 そして config.toml がだいぶ雑だったので構造化したのであった。。 あとは、コード全体も Main.kt に固まりがちだったので DDD に倣って構成をガラ...
                 </content:encoded>
                 <pubDate>Mon, 24 Nov 2025 11:22:17 GMT</pubDate>
                 <guid>https://blog.yappo.jp/entry/2025/11/24/update-structure/</guid>
@@ -57,7 +59,7 @@ meta.tomlの読み込みがおかしいなと思ったらktomlをだいぶ古い
                 <link>https://blog.yappo.jp/entry/2025/11/19/pologen-side-menu/</link>
                 <description/>
                 <content:encoded>
-CSS Frameworkも取り入れてちょっとは見やすくなったのでいい気になってサイドメニューも追加してみたのでした。あとOGP画像も対応です。追加機能OGP Imageモダンな記事サイトだとSNS に投稿すると記事タイトルとか内容を一枚の画像にして共有してくれるあれあるじゃ無い...
+CSS Frameworkも取り入れてちょっとは見やすくなったのでいい気になってサイドメニューも追加してみたのでした。 あとOGP画像も対応です。 追加機能 OGP Image モダンな記事サイトだとSNS に投稿すると記事タイトルとか内容を一枚の画像にして共有してくれるあれある...
                 </content:encoded>
                 <pubDate>Tue, 18 Nov 2025 21:25:45 GMT</pubDate>
                 <guid>https://blog.yappo.jp/entry/2025/11/19/pologen-side-menu/</guid>
@@ -68,7 +70,7 @@ CSS Frameworkも取り入れてちょっとは見やすくなったのでいい�
                 <link>https://blog.yappo.jp/entry/2025/11/16/pologen-upgrade/</link>
                 <description/>
                 <content:encoded>
-JJUG CCC 2025 Fall に行って意識が高まってたので Pologen を色々と更新してたのでした。大きな課題としてはHTML Template を別ファイルにしたかったRSS Feed もちゃんとしたかったサイト情報とか著者情報がハードコーディングされすぎてて設定可...
+JJUG CCC 2025 Fall に行って意識が高まってたので Pologen を色々と更新してたのでした。 大きな課題としては HTML Template を別ファイルにしたかった RSS Feed もちゃんとしたかった サイト情報とか著者情報がハードコーディングされすぎて...
                 </content:encoded>
                 <pubDate>Mon, 17 Nov 2025 12:55:22 GMT</pubDate>
                 <guid>https://blog.yappo.jp/entry/2025/11/16/pologen-upgrade/</guid>
@@ -79,9 +81,9 @@ JJUG CCC 2025 Fall に行って意識が高まってたので Pologen を色々�
                 <link>https://blog.yappo.jp/entry/2025/02/25/implemented-configuration/</link>
                 <description/>
                 <content:encoded>
-各種ファイルパスをコードに書いてたのを外に出そうと思って早一ヶ月、ようやく実装した。documentRootPath = &amp;quot;docs/entry&amp;quot;
-blogTopUrl = &amp;quot;https://blog.yappo.jp/&amp;quot;
-document...
+各種ファイルパスをコードに書いてたのを外に出そうと思って早一ヶ月、ようやく実装した。 documentRootPath = &quot;docs/entry&quot;
+blogTopUrl = &quot;https://blog.yappo.jp/&quot;
+documentBaseUrl = &quot;https://...
                 </content:encoded>
                 <pubDate>Tue, 25 Feb 2025 13:22:48 GMT</pubDate>
                 <guid>https://blog.yappo.jp/entry/2025/02/25/implemented-configuration/</guid>
@@ -92,7 +94,7 @@ document...
                 <link>https://blog.yappo.jp/entry/2025/02/14/kwebscraper/</link>
                 <description/>
                 <content:encoded>
-ふと Kotlin で DSL を実装してみたくなって、なんか題材ないかなと思ったら Web::Scraper が丁度良さそうな粒度だったので作ってみた。Perl だと同じ関数名でスコープごとに役割を変えていくって奴は local を使ってレキシカルスコープに絞ってコードリファレ...
+ふと Kotlin で DSL を実装してみたくなって、なんか題材ないかなと思ったら Web::Scraper が丁度良さそうな粒度だったので作ってみた。 Perl だと同じ関数名でスコープごとに役割を変えていくって奴は local を使ってレキシカルスコープに絞ってコードリファ...
                 </content:encoded>
                 <pubDate>Thu, 13 Feb 2025 21:37:25 GMT</pubDate>
                 <guid>https://blog.yappo.jp/entry/2025/02/14/kwebscraper/</guid>
@@ -103,8 +105,7 @@ document...
                 <link>https://blog.yappo.jp/entry/2025/01/29/metafile/</link>
                 <description/>
                 <content:encoded>
-index.md ファイルに更新日時とかを書くダルダル運用だったけど、新しく index.md を追加したことを検知して publish date を自動で付与するようにした。
-ついでに update date も検知して更新できるようにしといた。これで更新あれば HTML 生成...
+index.md ファイルに更新日時とかを書くダルダル運用だったけど、新しく index.md を追加したことを検知して publish date を自動で付与するようにした。 ついでに update date も検知して更新できるようにしといた。これで更新あれば HTML 生成...
                 </content:encoded>
                 <pubDate>Tue, 28 Jan 2025 20:42:52 GMT</pubDate>
                 <guid>https://blog.yappo.jp/entry/2025/01/29/metafile/</guid>
@@ -115,7 +116,7 @@ index.md ファイルに更新日時とかを書くダルダル運用だった�
                 <link>https://blog.yappo.jp/entry/2025/01/27/support-index/</link>
                 <description/>
                 <content:encoded>
-一旦エントリーページを生成してトップページとフィード購読もできるようになった風味。ちょっとコード雑すぎるから綺麗にせんとや。。。
+一旦エントリーページを生成してトップページとフィード購読もできるようになった風味。 ちょっとコード雑すぎるから綺麗にせんとや。。。
                 </content:encoded>
                 <pubDate>Mon, 27 Jan 2025 10:10:00 GMT</pubDate>
                 <guid>https://blog.yappo.jp/entry/2025/01/27/support-index/</guid>
@@ -126,7 +127,7 @@ index.md ファイルに更新日時とかを書くダルダル運用だった�
                 <link>https://blog.yappo.jp/entry/2025/01/27/pologenize/</link>
                 <description/>
                 <content:encoded>
-IntelliJ AI Assistant さんに手伝ってもらって取り敢えずは markdown から HTML 作ってくれる君を作ったので安心。。テンプレートエンジン使いたいけど取り敢えず kotlinx で HTML 書いてます。 Markdown parser は変なのおす...
+IntelliJ AI Assistant さんに手伝ってもらって取り敢えずは markdown から HTML 作ってくれる君を作ったので安心。。 テンプレートエンジン使いたいけど取り敢えず kotlinx で HTML 書いてます。 Markdown parser は変なのお...
                 </content:encoded>
                 <pubDate>Sun, 26 Jan 2025 22:00:00 GMT</pubDate>
                 <guid>https://blog.yappo.jp/entry/2025/01/27/pologenize/</guid>
@@ -137,9 +138,7 @@ IntelliJ AI Assistant さんに手伝ってもらって取り敢えずは markdo
                 <link>https://blog.yappo.jp/entry/2025/01/26/reborn/</link>
                 <description/>
                 <content:encoded>
-前のサーバがめっちゃクラッシュしてずっと放置しすぎてたけど、そろぼち再開しようということでここに再開します。
-note とか色々あるんだけど、やっぱエンジニアなら自前で CMS 作るよねー普通は。ということで作るところから始めよう。。。
-まだコード書いてすらいないので stati...
+前のサーバがめっちゃクラッシュしてずっと放置しすぎてたけど、そろぼち再開しようということでここに再開します。 note とか色々あるんだけど、やっぱエンジニアなら自前で CMS 作るよねー普通は。ということで作るところから始めよう。。。 まだコード書いてすらいないので stati...
                 </content:encoded>
                 <pubDate>Sun, 26 Jan 2025 14:00:00 GMT</pubDate>
                 <guid>https://blog.yappo.jp/entry/2025/01/26/reborn/</guid>

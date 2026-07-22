@@ -1,8 +1,14 @@
 publishDate = "2026-07-22 11:39:10"
 updateDate = "2026-07-22 11:47:30"
-bodyMd5 = "11e24489a600b96c9299028c6587a0f6d298c8e79e83aafa6535a57a3212e499"
+bodyMd5 = "9b20065771d6439d4b44272a172c0e960d4c150a318fbe155852d74ea0fb2f15"
 title = "22年前に作ってた本番投入してた検索エンジン Yappod を大AI時代の今風に作り替えてる話"
 summary = "その昔 iYappo という検索サイトがありまして、メインの方は Rast を導入したり最終形態は MySQL + Senna で作っていたんですが、別口の方も C でまるっと書いて色々やってたことが…"
+indexSummary = "その昔 iYappo という検索サイトがありまして、メインの方は Rast を導入したり最終形態は MySQL + Senna で作っていたんですが、別口の方も C でまるっと書いて色々やってたことがあったんですね。 メインとは違う方の実験としても自前で検索エンジンを書いて一般公..."
+sourceSha256 = "fd9c08fbd8a91436d80c0b1542acc7d873d85d8358853d237e9cb50506171748"
+renderConfigSha256 = "7813fea91651358b9e0fd172e083c221ecb3ce822e33e2eb297b31c725814f0d"
+navigationSha256 = "66172c4c63c443e2e05ca8dfe54343e688a74edc05868725f0440d513782b5b5"
+generatorVersion = 2
+tags = [ ]
 
 [[toc]]
     level = 2
@@ -28,3 +34,10 @@ summary = "その昔 iYappo という検索サイトがありまして、メイ�
     level = 2
     text = "いまこんなことをする意味"
     id = "heading-9b5f4f58925037e8"
+
+[[images]]
+    sourcePath = "index-du.png"
+    sourceSha256 = "6f3c54cd466990fab56c0ef81eaa409c307bdaf0e70fabee2c87a1a61a842ba7"
+    fullPath = "index-du-full.png"
+    thumbPath = "index-du-thumb.png"
+    configSha256 = "e3fd0762443dc5abc74c092ddb962d39ef9bbf34eb10013df893378f7e93da00"

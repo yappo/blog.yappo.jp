@@ -1,6 +1,14 @@
 publishDate = "2025-02-14 06:37:25"
 updateDate = "2025-02-14 06:39:46"
-bodyMd5 = "aab57d7a34f616e6d647b857a737a4c191e541d4c1c48baa38d3c3226473e9cc"
+bodyMd5 = "cd4623765b092351c5f5d2c18b13c915451b7c5d6ddd05e9e51708915c2b89ad"
 title = "KWebScraper - なんとなく Kotlin で Web::Scraper 実装してみた"
-summary = "ふと Kotlin で DSL を実装してみたくなって、なんか題材ないかなと思ったら Web::Scraper が丁度良さそうな粒度だったので作ってみた。Perl だと同じ関数名でスコープごとに役割を…"
+summary = "ふと Kotlin で DSL を実装してみたくなって、なんか題材ないかなと思ったら Web::Scraper が丁度良さそうな粒度だったので作ってみた。 Perl だと同じ関数名でスコープごとに役割…"
+indexSummary = "ふと Kotlin で DSL を実装してみたくなって、なんか題材ないかなと思ったら Web::Scraper が丁度良さそうな粒度だったので作ってみた。 Perl だと同じ関数名でスコープごとに役割を変えていくって奴は local を使ってレキシカルスコープに絞ってコードリファ..."
+sourceSha256 = "0343dfd8217ef0f85bb2c715e8804e77be044554b5560683576441c86888ff5d"
+renderConfigSha256 = "7813fea91651358b9e0fd172e083c221ecb3ce822e33e2eb297b31c725814f0d"
+navigationSha256 = "66172c4c63c443e2e05ca8dfe54343e688a74edc05868725f0440d513782b5b5"
+generatorVersion = 2
+tags = [ ]
+
+
 

@@ -1,6 +1,14 @@
 publishDate = "2025-11-24 20:22:17"
 updateDate = "2025-11-24 20:22:17"
-bodyMd5 = "e12f7039166a557467993d31b33367d938a9a9a2b52aa274f9d8dd09ace5c191"
+bodyMd5 = "8239a118f3c086d1b2dfe129cf8b7fe60d2277449b5e8d205ffc1d4ca7766abc"
 title = "設定ファイルやクラス構造を諸々変えたよ"
-summary = "meta.tomlの読み込みがおかしいなと思ったらktomlをだいぶ古いの使ってたので0.7.1にアップデート。そして config.toml がだいぶ雑だったので構造化したのであった。。あとは、コー…"
+summary = "meta.tomlの読み込みがおかしいなと思ったらktomlをだいぶ古いの使ってたので0.7.1にアップデート。 そして config.toml がだいぶ雑だったので構造化したのであった。。 あとは、…"
+indexSummary = "meta.tomlの読み込みがおかしいなと思ったらktomlをだいぶ古いの使ってたので0.7.1にアップデート。 そして config.toml がだいぶ雑だったので構造化したのであった。。 あとは、コード全体も Main.kt に固まりがちだったので DDD に倣って構成をガラ..."
+sourceSha256 = "95a773363ac0cd4849ddaa016b51e08a53ca7d007980ff8b3ea51ef65b0751fb"
+renderConfigSha256 = "7813fea91651358b9e0fd172e083c221ecb3ce822e33e2eb297b31c725814f0d"
+navigationSha256 = "66172c4c63c443e2e05ca8dfe54343e688a74edc05868725f0440d513782b5b5"
+generatorVersion = 2
+tags = [ ]
+
+
 

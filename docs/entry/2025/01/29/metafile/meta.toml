@@ -1,6 +1,14 @@
 publishDate = "2025-01-29 05:42:52"
 updateDate = "2025-01-29 05:42:52"
-bodyMd5 = "1fe24c851641862c42d01de56fc24b9a0a883629394c2389e865b972b994ba52"
+bodyMd5 = "5936dbfd1a5f3be9f774fa8967b76a69f6a4dce97cbe91865196bf4117f6b031"
 title = "meta.toml を実装"
 summary = "index.md ファイルに更新日時とかを書くダルダル運用だったけど、新しく index.md を追加したことを検知して publish date を自動で付与するようにした。 ついでに update…"
+indexSummary = "index.md ファイルに更新日時とかを書くダルダル運用だったけど、新しく index.md を追加したことを検知して publish date を自動で付与するようにした。 ついでに update date も検知して更新できるようにしといた。これで更新あれば HTML 生成..."
+sourceSha256 = "757cef97f0128bb5b8827b4f72d984b48a5d80ab9939b3f3a4260ea1126c4b69"
+renderConfigSha256 = "7813fea91651358b9e0fd172e083c221ecb3ce822e33e2eb297b31c725814f0d"
+navigationSha256 = "66172c4c63c443e2e05ca8dfe54343e688a74edc05868725f0440d513782b5b5"
+generatorVersion = 2
+tags = [ ]
+
+
 
