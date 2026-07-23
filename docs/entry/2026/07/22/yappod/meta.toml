@@ -6,7 +6,7 @@ summary = "その昔 iYappo という検索サイトがありまして、メイ�
 indexSummary = "その昔 iYappo という検索サイトがありまして、メインの方は Rast を導入したり最終形態は MySQL + Senna で作っていたんですが、別口の方も C でまるっと書いて色々やってたことがあったんですね。 メインとは違う方の実験としても自前で検索エンジンを書いて一般公..."
 sourceSha256 = "fd9c08fbd8a91436d80c0b1542acc7d873d85d8358853d237e9cb50506171748"
 renderConfigSha256 = "7813fea91651358b9e0fd172e083c221ecb3ce822e33e2eb297b31c725814f0d"
-navigationSha256 = "66172c4c63c443e2e05ca8dfe54343e688a74edc05868725f0440d513782b5b5"
+navigationSha256 = "f13546b6d4aa9bed8eb39c7cfb0f1df2ae2a2b3fbf98d15ec2c972e8a577f17c"
 generatorVersion = 2
 tags = [ ]
 

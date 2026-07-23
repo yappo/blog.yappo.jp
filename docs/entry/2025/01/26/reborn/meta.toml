@@ -6,7 +6,7 @@ summary = "前のサーバがめっちゃクラッシュしてずっと放置し
 indexSummary = "前のサーバがめっちゃクラッシュしてずっと放置しすぎてたけど、そろぼち再開しようということでここに再開します。 note とか色々あるんだけど、やっぱエンジニアなら自前で CMS 作るよねー普通は。ということで作るところから始めよう。。。 まだコード書いてすらいないので stati..."
 sourceSha256 = "6fba910fa983e504651c99cd57040d6728d2de681829ec02294950669164028b"
 renderConfigSha256 = "7813fea91651358b9e0fd172e083c221ecb3ce822e33e2eb297b31c725814f0d"
-navigationSha256 = "66172c4c63c443e2e05ca8dfe54343e688a74edc05868725f0440d513782b5b5"
+navigationSha256 = "f13546b6d4aa9bed8eb39c7cfb0f1df2ae2a2b3fbf98d15ec2c972e8a577f17c"
 generatorVersion = 2
 tags = [ ]
 

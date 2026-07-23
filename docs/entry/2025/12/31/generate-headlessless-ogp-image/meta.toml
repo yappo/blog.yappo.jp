@@ -6,7 +6,7 @@ summary = "ここまでずっとBlog生成ツールの開発日誌ばっかだ�
 indexSummary = "ここまでずっとBlog生成ツールの開発日誌ばっかだったけど、いい加減そろそろ普通のことでも描こうかと思って。 TL;DR なんだかんだで作るのが大変なOGP画像生成の実装を生成AIにやらせたら案外良い感じに作れるかもね？と思いついて作ってみただけの日記。 OGP画像って作るのめん..."
 sourceSha256 = "168deb5b06d47a9f8f3a564ade89a041cabc2d6b42f3e603626949a0f3a62e2b"
 renderConfigSha256 = "7813fea91651358b9e0fd172e083c221ecb3ce822e33e2eb297b31c725814f0d"
-navigationSha256 = "66172c4c63c443e2e05ca8dfe54343e688a74edc05868725f0440d513782b5b5"
+navigationSha256 = "f13546b6d4aa9bed8eb39c7cfb0f1df2ae2a2b3fbf98d15ec2c972e8a577f17c"
 generatorVersion = 2
 tags = [ ]
 

@@ -1,0 +1,28 @@
+publishDate = "2026-07-24 01:34:02"
+updateDate = "2026-07-24 01:34:02"
+bodyMd5 = "1956ca44197bedc4d4e3bdb47a4dcfb948fa39cb6f5a6d86b088cda5aa2938d5"
+title = "RF10080 の QUERY method を Yappod に実装しました"
+summary = "これといって強い意志は無かったんですが先月RFC10080が出たってことでせっかくなので Yappod に実装してみようと思って実装してみました。 front server の検索APIなどが QUE…"
+indexSummary = "これといって強い意志は無かったんですが先月RFC10080が出たってことでせっかくなので Yappod に実装してみようと思って実装してみました。 front server の検索APIなどが QUERY に対応してます。一旦後方互換のために POST でも動くように残してありま..."
+sourceSha256 = "6e5629811507ddefcc363e6403ab2b90a4c5799fd619bb1665341774ded88ebb"
+renderConfigSha256 = "7813fea91651358b9e0fd172e083c221ecb3ce822e33e2eb297b31c725814f0d"
+navigationSha256 = "f13546b6d4aa9bed8eb39c7cfb0f1df2ae2a2b3fbf98d15ec2c972e8a577f17c"
+generatorVersion = 2
+tags = [ ]
+
+[[toc]]
+    level = 2
+    text = "内部通信も変更"
+    id = "heading-3e881f97e4cf5358"
+
+[[toc]]
+    level = 2
+    text = "とはいえ"
+    id = "heading-8ee3c42cfbb249ce"
+
+[[images]]
+    sourcePath = "query-method-request.png"
+    sourceSha256 = "64299e006add3ba191445e49ad725209846cd73ddaddac861b62140e33b51717"
+    fullPath = "query-method-request-full.png"
+    thumbPath = "query-method-request-thumb.png"
+    configSha256 = "e3fd0762443dc5abc74c092ddb962d39ef9bbf34eb10013df893378f7e93da00"

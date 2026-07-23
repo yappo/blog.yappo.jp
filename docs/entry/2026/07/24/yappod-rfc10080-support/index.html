@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>RF10080 の QUERY method を Yappod に実装しました - YappoLogs2</title>
+    <meta name="description" content="Yappoのブログだよ"/>
+    <link rel="icon" href="/favicon.png"/>
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://blog.yappo.jp/feed.xml"/>
+
+    <meta property="og:title" content="RF10080 の QUERY method を Yappod に実装しました"/>
+    
+        <meta property="og:description" content="これといって強い意志は無かったんですが先月RFC10080が出たってことでせっかくなので Yappod に実装してみようと思って実装してみました。 front server の検索APIなどが QUE…"/>
+    
+    <meta property="og:image" content="https://blog.yappo.jp/entry/2026/07/24/yappod-rfc10080-support/ogp.png"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:title" content="RF10080 の QUERY method を Yappod に実装しました"/>
+    
+        <meta name="twitter:description" content="これといって強い意志は無かったんですが先月RFC10080が出たってことでせっかくなので Yappod に実装してみようと思って実装してみました。 front server の検索APIなどが QUE…"/>
+    
+    <meta name="twitter:image" content="https://blog.yappo.jp/entry/2026/07/24/yappod-rfc10080-support/ogp.png"/>
+
+    <link rel="stylesheet" href="/assets/pologen.css"/>     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"/> 
+    <script src="/assets/pologen.js"></script>     <script src="https://cdn.tailwindcss.com"></script>     <script src="/entry/assets/pologen.js"></script> 
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans">
+<div class="min-h-screen flex flex-col">
+    <header class="border-b border-slate-800 bg-slate-900/50">
+        <div class="mx-auto w-full max-w-6xl px-4 py-6 flex items-center justify-between gap-4">
+            <div>
+                <a href="https://blog.yappo.jp/" class="text-xl font-semibold tracking-tight hover:text-slate-200 transition">
+                    YappoLogs2
+                </a>
+            </div>
+            <nav class="flex items-center gap-4 text-sm">
+                
+                
+            </nav>
+        </div>
+    </header>
+    <main class="flex-1">
+        <div data-testid="entry-layout" class="mx-auto w-full max-w-6xl px-4 py-10 flex flex-col lg:flex-row gap-8">
+            <article class="lg:w-2/3 space-y-8">
+                <div class="space-y-2">
+                    <p class="text-sm text-slate-400">Fri, 24 Jul 2026 01:34:02 JST</p>
+                    <h1 class="text-3xl md:text-4xl font-bold text-white leading-tight">RF10080 の QUERY method を Yappod に実装しました</h1>
+                    <div class="flex items-center gap-3 text-sm text-slate-300">
+                        <img src="https://pbs.twimg.com/profile_images/1770102954382831616/H3LXaTgp_normal.jpg"
+                             alt="Yappo"
+                             class="h-8 w-8 rounded-full border border-slate-700"/>
+                        <a href="https://x.com/yappo" class="hover:text-white transition">Yappo</a>
+                    </div>
+                    
+                </div>
+                <div class="prose prose-invert max-w-none
+                    [&_h2]:text-2xl [&_h2]:md:text-3xl [&_h2]:font-semibold [&_h2]:mt-10 [&_h2]:mb-6 [&_h2]:leading-tight
+                    [&_h3]:text-xl [&_h3]:md:text-2xl [&_h3]:font-semibold [&_h3]:mt-8 [&_h3]:mb-4 [&_h3]:leading-snug
+                    [&_h4]:text-lg [&_h4]:md:text-xl [&_h4]:font-semibold [&_h4]:mt-6 [&_h4]:mb-3
+                    [&_h5]:text-base [&_h5]:font-semibold [&_h5]:mt-5 [&_h5]:mb-3
+                    [&_h6]:text-sm [&_h6]:font-semibold [&_h6]:mt-4 [&_h6]:mb-2
+                    [&_a]:text-sky-300 [&_a]:underline [&_a]:decoration-sky-400/70 [&_a]:underline-offset-4
+                    [&_a:hover]:text-sky-200 [&_a:hover]:decoration-2
+                    [&_a:visited]:text-violet-300 [&_a:visited]:decoration-violet-400/70
+                    [&_a:focus-visible]:rounded-sm [&_a:focus-visible]:outline-none [&_a:focus-visible]:ring-2 [&_a:focus-visible]:ring-sky-300 [&_a:focus-visible]:ring-offset-2 [&_a:focus-visible]:ring-offset-slate-950
+                    [&_ul]:list-disc [&_ul]:list-outside [&_ul]:pl-6 [&_ul>li]:my-2
+                    [&_ol]:list-decimal [&_ol]:list-outside [&_ol]:pl-6 [&_ol>li]:my-2
+                    [&_li>ul]:mt-2 [&_li>ol]:mt-2">
+                    <p>これといって強い意志は無かったんですが先月<a href="https://datatracker.ietf.org/doc/html/rfc10008">RFC10080</a>が出たってことでせっかくなので Yappod に実装してみようと思って実装してみました。</p><p><button type="button" class="pologen-image-thumb block" data-full-src="./query-method-request-full.png" data-alt="img.png">
+    <img src="./query-method-request-thumb.png" alt="img.png" loading="lazy" class="max-w-full h-auto rounded-xl shadow-md my-4"/>
+</button></p><p>front server の検索APIなどが QUERY に対応してます。一旦後方互換のために POST でも動くように残してあります。</p><h2 id="heading-3e881f97e4cf5358">内部通信も変更</h2><p>yappod は frontend server と backend server の二段構えになっていて、元々は index を受け持ってる backend server を複数台並べて分散処理ができるような設計だったんですが</p><p>どういうわけか Yappod2 にしていく過程で Codex が「いったん分散構成外しとこ？」とか提案してきたり</p><p>旧 yappod は front &lt;-&gt; core の通信が simple text だったんだけど、 Codex が「バイナリ通信ベースのが堅牢で早いぜ！」みたいな提案をするもんだからホイホイおっけーだしてしまって</p><p>なんで front/core で別れてるんだかわからない独自プロトコルになってたんです。 AI の提案をホイホイ聞いてちゃダメですね。</p><p>元々は front/core を分離してスケールアウトしやすくしたいというのもあって、 front &lt;-&gt; core の通信も独自バイナリから HTTP/1.1 に変更しました。ついでに QUERY method で検索するように。</p><p>現状としてはアプリ側から直接 core 叩いても良いっていうか front がいるだけオーバヘッドあるけど、重めな core node を水平/垂直で並べて front と core の間に load balancer 入れて分散。
+さらに front 側も複数にして。。みたいなスケールアウトしやすくしとこう。という感じで刷新しときました。</p><h2 id="heading-8ee3c42cfbb249ce">とはいえ</h2><p>そんなスケールアウトしまくる用途で使われる気がしないけど、趣味なんで。。</p><p>あと RFC を元に AI に作らせると手戻り全然なくって便利ですね。 RFC はやっぱすごい。</p>
+                </div>
+            </article>
+            <aside class="lg:w-1/3 space-y-4">
+                <div class="card bg-slate-900/60 border border-slate-800">
+                    <div class="card-body">
+                        <div class="flex items-center gap-3">
+                            <img src="https://pbs.twimg.com/profile_images/1770102954382831616/H3LXaTgp_normal.jpg"
+                                 alt="Yappo"
+                                 class="h-10 w-10 rounded-full border border-slate-700"/>
+                            <div>
+                                <p class="text-sm text-slate-400">Author</p>
+                                <a href="https://x.com/yappo" class="text-white font-semibold hover:text-slate-200 transition">Yappo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                    <div data-testid="toc-card" class="card bg-slate-900/60 border border-slate-800 lg:sticky lg:top-4">
+                        <div class="card-body">
+                            <h3 class="card-title text-white text-base">Table of contents</h3>
+                            <ul class="menu bg-transparent text-sm text-slate-300">
+                            
+                                
+                                    <li>
+                                        <a href="#heading-3e881f97e4cf5358" class="pologen-toc-link">内部通信も変更</a>
+                                    </li>
+                                
+                            
+                                
+                                    <li>
+                                        <a href="#heading-8ee3c42cfbb249ce" class="pologen-toc-link">とはいえ</a>
+                                    </li>
+                                
+                            
+                            </ul>
+                        </div>
+                    </div>
+                
+                <div class="card bg-slate-900/60 border border-slate-800">
+                    <div class="card-body">
+                        <h3 class="card-title text-white text-base">Recent posts</h3>
+                        <ul class="space-y-2 text-sm">
+                        
+                            <li>
+                                <a href="https://blog.yappo.jp/entry/2026/07/24/yappod-rfc10080-support/" class="block font-semibold text-white transition">
+                                    RF10080 の QUERY method を Yappod に実装しました
+                                </a>
+                                <p class="text-xs text-slate-500">Fri, 24 Jul 2026 01:34:02 JST</p>
+                            </li>
+                        
+                            <li>
+                                <a href="https://blog.yappo.jp/entry/2026/07/22/yappod/" class="block text-slate-300 hover:text-white transition">
+                                    22年前に作ってた本番投入してた検索エンジン Yappod を大AI時代の今風に作り替えてる話
+                                </a>
+                                <p class="text-xs text-slate-500">Wed, 22 Jul 2026 11:39:10 JST</p>
+                            </li>
+                        
+                            <li>
+                                <a href="https://blog.yappo.jp/entry/2026/03/06/gpt-5.4-make-nanjj-thread/" class="block text-slate-300 hover:text-white transition">
+                                    【悲報】Open AI の GPT-5.4 が出た から なんJ のクソスレを創作してもらったらしんみり大作が出来てしまい全米が泣いた？
+                                </a>
+                                <p class="text-xs text-slate-500">Fri, 06 Mar 2026 20:04:20 JST</p>
+                            </li>
+                        
+                            <li>
+                                <a href="https://blog.yappo.jp/entry/2025/12/31/generate-headlessless-ogp-image/" class="block text-slate-300 hover:text-white transition">
+                                    生成AI時代のOGP画像生成にはHeadless Browserは不要説
+                                </a>
+                                <p class="text-xs text-slate-500">Wed, 31 Dec 2025 21:28:10 JST</p>
+                            </li>
+                        
+                            <li>
+                                <a href="https://blog.yappo.jp/entry/2025/11/24/update-structure/" class="block text-slate-300 hover:text-white transition">
+                                    設定ファイルやクラス構造を諸々変えたよ
+                                </a>
+                                <p class="text-xs text-slate-500">Mon, 24 Nov 2025 20:22:17 JST</p>
+                            </li>
+                        
+                            <li>
+                                <a href="https://blog.yappo.jp/entry/2025/11/19/pologen-side-menu/" class="block text-slate-300 hover:text-white transition">
+                                    ブログにサイドメニューを追加したよ！！
+                                </a>
+                                <p class="text-xs text-slate-500">Wed, 19 Nov 2025 06:25:45 JST</p>
+                            </li>
+                        
+                            <li>
+                                <a href="https://blog.yappo.jp/entry/2025/11/16/pologen-upgrade/" class="block text-slate-300 hover:text-white transition">
+                                    Pologen で Tailwind CSS &amp; daisy UI を使うようにしたよ！ Template Engine も変えたよ！！
+                                </a>
+                                <p class="text-xs text-slate-500">Mon, 17 Nov 2025 21:55:22 JST</p>
+                            </li>
+                        
+                            <li>
+                                <a href="https://blog.yappo.jp/entry/2025/02/25/implemented-configuration/" class="block text-slate-300 hover:text-white transition">
+                                    config.toml を実装したよ
+                                </a>
+                                <p class="text-xs text-slate-500">Tue, 25 Feb 2025 22:22:48 JST</p>
+                            </li>
+                        
+                            <li>
+                                <a href="https://blog.yappo.jp/entry/2025/02/14/kwebscraper/" class="block text-slate-300 hover:text-white transition">
+                                    KWebScraper - なんとなく Kotlin で Web::Scraper 実装してみた
+                                </a>
+                                <p class="text-xs text-slate-500">Fri, 14 Feb 2025 06:37:25 JST</p>
+                            </li>
+                        
+                            <li>
+                                <a href="https://blog.yappo.jp/entry/2025/01/29/metafile/" class="block text-slate-300 hover:text-white transition">
+                                    meta.toml を実装
+                                </a>
+                                <p class="text-xs text-slate-500">Wed, 29 Jan 2025 05:42:52 JST</p>
+                            </li>
+                        
+                        </ul>
+                    </div>
+                </div>
+                <div class="card bg-slate-900/60 border border-slate-800">
+                    <div class="card-body">
+                        <h3 class="card-title text-white text-base">Links</h3>
+                        <ul class="space-y-2 text-sm">
+                        
+                            <li>
+                                <a href="https://github.com/yappo" class="text-slate-300 hover:text-white transition" target="_blank" rel="noopener">GitHub</a>
+                            </li>
+                        
+                            <li>
+                                <a href="https://x.com/yappo" class="text-slate-300 hover:text-white transition" target="_blank" rel="noopener">X</a>
+                            </li>
+                        
+                            <li>
+                                <a href="https://github.com/yappo/Pologen" class="text-slate-300 hover:text-white transition" target="_blank" rel="noopener">Pologen</a>
+                            </li>
+                        
+                            <li>
+                                <a href="https://github.com/yappo/blog.yappo.jp" class="text-slate-300 hover:text-white transition" target="_blank" rel="noopener">Blog repository</a>
+                            </li>
+                        
+                        </ul>
+                    </div>
+                </div>
+                <div class="card bg-slate-900/60 border border-slate-800">
+                    <div class="card-body">
+                        <h3 class="card-title text-white text-base">RSS</h3>
+                        <a href="https://blog.yappo.jp/feed.xml" class="text-slate-300 hover:text-white transition text-sm">Subscribe</a>
+                    </div>
+                </div>
+                <div class="card bg-slate-900/60 border border-slate-800">
+                    <div class="card-body">
+                        <a
+                            href="https://x.com/intent/post?text=YappoLogs2+-+RF10080+%E3%81%AE+QUERY+method+%E3%82%92+Yappod+%E3%81%AB%E5%AE%9F%E8%A3%85%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F%20https%3A%2F%2Fblog.yappo.jp%2Fentry%2F2026%2F07%2F24%2Fyappod-rfc10080-support%2F"
+                            target="_blank"
+                            rel="noopener"
+                            class="inline-flex items-center justify-center gap-2 rounded-xl border border-slate-800 bg-black px-4 py-3 text-white text-xs font-semibold tracking-wide hover:bg-slate-900 transition focus-visible:outline focus-visible:outline-slate-300 w-full"
+                        >
+                            <svg viewBox="0 0 24 24" aria-hidden="true" class="h-4 w-4"><path fill="currentColor" d="M18.244 2h3.308l-7.227 8.26L22 22h-6.843l-4.56-6.11L5.406 22H2.095l7.73-8.836L2 2h6.99l4.117 5.572zm-1.16 17.94h1.833L7.084 3.973H5.117z"/></svg>
+                            Share on X
+                        </a>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+    <footer class="border-t border-slate-800 bg-slate-900/60">
+        <div class="mx-auto w-full max-w-6xl px-4 py-6 text-sm text-slate-400 flex items-center justify-between">
+            <span>© YappoLogs2</span>
+            <a href="https://x.com/yappo" class="hover:text-white transition">Yappo</a>
+        </div>
+    </footer>
+</div>
+<div
+  id="pologen-image-overlay"
+  class="hidden fixed inset-0 z-50 bg-black/80 items-center justify-center"
+>
+  <button
+    type="button"
+    id="pologen-image-overlay-close"
+    class="absolute top-4 right-4 text-white text-2xl"
+    aria-label="Close"
+  >
+    ×
+  </button>
+  <img
+    id="pologen-image-overlay-img"
+    src=""
+    alt=""
+    class="max-w-[90vw] max-h-[90vh] shadow-2xl"
+  />
+</div>
+</body>
+</html>

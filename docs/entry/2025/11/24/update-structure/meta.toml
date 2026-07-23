@@ -6,7 +6,7 @@ summary = "meta.tomlの読み込みがおかしいなと思ったらktomlをだ�
 indexSummary = "meta.tomlの読み込みがおかしいなと思ったらktomlをだいぶ古いの使ってたので0.7.1にアップデート。 そして config.toml がだいぶ雑だったので構造化したのであった。。 あとは、コード全体も Main.kt に固まりがちだったので DDD に倣って構成をガラ..."
 sourceSha256 = "95a773363ac0cd4849ddaa016b51e08a53ca7d007980ff8b3ea51ef65b0751fb"
 renderConfigSha256 = "7813fea91651358b9e0fd172e083c221ecb3ce822e33e2eb297b31c725814f0d"
-navigationSha256 = "66172c4c63c443e2e05ca8dfe54343e688a74edc05868725f0440d513782b5b5"
+navigationSha256 = "f13546b6d4aa9bed8eb39c7cfb0f1df2ae2a2b3fbf98d15ec2c972e8a577f17c"
 generatorVersion = 2
 tags = [ ]
 

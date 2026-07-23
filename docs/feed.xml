@@ -7,8 +7,19 @@
         <description>Yappoのブログだよ</description>
         <language>ja</language>
         
-            <pubDate>Wed, 22 Jul 2026 02:39:10 GMT</pubDate>
+            <pubDate>Thu, 23 Jul 2026 16:34:02 GMT</pubDate>
         
+        
+            <item>
+                <title>RF10080 の QUERY method を Yappod に実装しました</title>
+                <link>https://blog.yappo.jp/entry/2026/07/24/yappod-rfc10080-support/</link>
+                <description/>
+                <content:encoded>
+これといって強い意志は無かったんですが先月RFC10080が出たってことでせっかくなので Yappod に実装してみようと思って実装してみました。 front server の検索APIなどが QUERY に対応してます。一旦後方互換のために POST でも動くように残してありま...
+                </content:encoded>
+                <pubDate>Thu, 23 Jul 2026 16:34:02 GMT</pubDate>
+                <guid>https://blog.yappo.jp/entry/2026/07/24/yappod-rfc10080-support/</guid>
+            </item>
         
             <item>
                 <title>22年前に作ってた本番投入してた検索エンジン Yappod を大AI時代の今風に作り替えてる話</title>

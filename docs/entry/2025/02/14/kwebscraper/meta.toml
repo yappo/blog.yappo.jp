@@ -6,7 +6,7 @@ summary = "ふと Kotlin で DSL を実装してみたくなって、なんか�
 indexSummary = "ふと Kotlin で DSL を実装してみたくなって、なんか題材ないかなと思ったら Web::Scraper が丁度良さそうな粒度だったので作ってみた。 Perl だと同じ関数名でスコープごとに役割を変えていくって奴は local を使ってレキシカルスコープに絞ってコードリファ..."
 sourceSha256 = "0343dfd8217ef0f85bb2c715e8804e77be044554b5560683576441c86888ff5d"
 renderConfigSha256 = "7813fea91651358b9e0fd172e083c221ecb3ce822e33e2eb297b31c725814f0d"
-navigationSha256 = "66172c4c63c443e2e05ca8dfe54343e688a74edc05868725f0440d513782b5b5"
+navigationSha256 = "f13546b6d4aa9bed8eb39c7cfb0f1df2ae2a2b3fbf98d15ec2c972e8a577f17c"
 generatorVersion = 2
 tags = [ ]
 
